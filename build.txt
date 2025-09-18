@@ -1,0 +1,282 @@
+PS C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)> npm run dev
+
+> rezge-islamic-marriage@0.0.0 dev
+> vite
+
+2:08:46 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v7.1.1  ready in 6678 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+2:08:57 AM [vite] (client) warning: Duplicate key "تم قبول بلاغك" in object literal
+66 |        'تم قبول البلاغ': 'notifications.content.reportAccepted.title',
+67 |        'تم رفض بلاغك': 'notifications.content.reportRejected.title',
+68 |        'تم قبول بلاغك': 'notifications.content.reportAccepted.title',
+   |        ^
+69 |        'عرض تفاصيل البلاغ': 'notifications.content.reportAccepted.actionText',
+70 |        // رسائل البلاغات المفصلة
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: Duplicate key "تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك ع
+لى مساعدتنا في تحسين المجتمع." in object literal
+76 |        'شكراً لك على تقديم البلاغ. تم استلام بلاغك وجاري مراجعته من قبل فريق الإشراف.': 'notifications.content.
+reportReceived.message',
+77 |        // نصوص إضافية محتملة
+78 |        'تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك على مساعدتنا في تحسين المجتمع.': 'notif
+ications.content.reportAccepted.message',
+   |        ^
+79 |        'تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على اهتمامك بسلامة المجتمع.': 'notificati
+ons.content.reportRejected.message',
+80 |        // إشعارات التوثيق
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: Duplicate key "تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على
+ اهتمامك بسلامة المجتمع." in object literal
+77 |        // نصوص إضافية محتملة
+78 |        'تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك على مساعدتنا في تحسين المجتمع.': 'notif
+ications.content.reportAccepted.message',
+79 |        'تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على اهتمامك بسلامة المجتمع.': 'notificati
+ons.content.reportRejected.message',
+   |        ^
+80 |        // إشعارات التوثيق
+81 |        'تم توثيق حسابك بنجاح': 'notifications.content.verificationApproved.title',
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: Duplicate key "عرض الملف الشخصي" in object literal
+81 |        'تم توثيق حسابك بنجاح': 'notifications.content.verificationApproved.title',
+82 |        'تم رفض طلب التوثيق': 'notifications.content.verificationRejected.title',
+83 |        'عرض الملف الشخصي': 'notifications.content.verificationApproved.actionText',
+   |        ^
+84 |        'إعادة تقديم الطلب': 'notifications.content.verificationRejected.actionText',
+85 |        'إعادة المحاولة': 'notifications.retry',
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: Duplicate key "تهانينا! تم توثيق هويتك الشخصية بنجاح. يمكنك الآن الاستفادة من جم
+يع مميزات الموقع." in object literal
+89 |        'تم رفض طلب توثيق هويتك. يرجى المحاولة مرة أخرى.': 'notifications.content.verificationRejected.message',
+90 |        // محتوى إشعارات التوثيق
+91 |        'تهانينا! تم توثيق هويتك الشخصية بنجاح. يمكنك الآن الاستفادة من جميع مميزات الموقع.': 'notifications.con
+tent.verificationApproved.message',
+   |        ^
+92 |        'تم رفض طلب توثيق هويتك. يرجى المحاولة مرة أخرى.': 'notifications.content.verificationRejected.message'
+93 |      };
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: Duplicate key "تم رفض طلب توثيق هويتك. يرجى المحاولة مرة أخرى." in object litera
+l
+90 |        // محتوى إشعارات التوثيق
+91 |        'تهانينا! تم توثيق هويتك الشخصية بنجاح. يمكنك الآن الاستفادة من جميع مميزات الموقع.': 'notifications.con
+tent.verificationApproved.message',
+92 |        'تم رفض طلب توثيق هويتك. يرجى المحاولة مرة أخرى.': 'notifications.content.verificationRejected.message'
+   |        ^
+93 |      };
+94 |  
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationsPage.tsx
+2:08:57 AM [vite] (client) warning: This assignment will throw because "data" is a constant
+638 |                console.log('✅ Login successful with database email');
+639 |                // تحديث المتغيرات للاستمرار مع البيانات الصحيحة
+640 |                data = retryData;
+    |                ^
+641 |                error = null;
+642 |  
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/contexts/AuthContext.tsx
+2:08:57 AM [vite] (client) warning: This assignment will throw because "error" is a constant
+639 |                // تحديث المتغيرات للاستمرار مع البيانات الصحيحة
+640 |                data = retryData;
+641 |                error = null;
+    |                ^
+642 |  
+643 |                // محاولة مزامنة البريد تلقائياً
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/contexts/AuthContext.tsx
+2:08:58 AM [vite] (client) warning: Duplicate key "تم قبول بلاغك" in object literal
+217 |        'تم قبول البلاغ': 'notifications.content.reportAccepted.title',
+218 |        'تم رفض بلاغك': 'notifications.content.reportRejected.title',
+219 |        'تم قبول بلاغك': 'notifications.content.reportAccepted.title',
+    |        ^
+220 |        // رسائل البلاغات المفصلة
+221 |        'تم استلام بلاغك وجاري مراجعته الآن. سنقوم بإشعارك بالنتيجة قريباً.': 'notifications.content.reportRece
+ived.message',
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationDropdown.tsx
+2:08:58 AM [vite] (client) warning: Duplicate key "تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك ع
+لى مساعدتنا في تحسين المجتمع." in object literal
+226 |        'شكراً لك على تقديم البلاغ. تم استلام بلاغك وجاري مراجعته من قبل فريق الإشراف.': 'notifications.content
+.reportReceived.message',
+227 |        // نصوص إضافية محتملة
+228 |        'تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك على مساعدتنا في تحسين المجتمع.': 'noti
+fications.content.reportAccepted.message',
+    |        ^
+229 |        'تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على اهتمامك بسلامة المجتمع.': 'notificat
+ions.content.reportRejected.message',
+230 |        // إشعارات التوثيق
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationDropdown.tsx
+2:08:58 AM [vite] (client) warning: Duplicate key "تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على
+ اهتمامك بسلامة المجتمع." in object literal
+227 |        // نصوص إضافية محتملة
+228 |        'تم قبول بلاغك وسيتم اتخاذ الإجراء المناسب في أقرب وقت. شكراً لك على مساعدتنا في تحسين المجتمع.': 'noti
+fications.content.reportAccepted.message',
+229 |        'تم مراجعة بلاغك وقررنا عدم اتخاذ إجراء في هذا الوقت. شكراً لك على اهتمامك بسلامة المجتمع.': 'notificat
+ions.content.reportRejected.message',
+    |        ^
+230 |        // إشعارات التوثيق
+231 |        'تم توثيق حسابك بنجاح': 'notifications.content.verificationApproved.title',
+
+  Plugin: vite:esbuild
+  File: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/src/components/NotificationDropdown.tsx
+(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error:   Failed to scan for dependencies from e
+ntries:
+  C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-404-page.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-chat-features.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-content-script-error.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-flags.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-message-read-status.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-read-status-issue.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/debug-supabase-connection.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/diagnose-email-update-issue.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/final-admin-separation-test.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/fix-blocking-inconsistency.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/flag-solution-test.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/flag-test.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/index.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/svg-flags-test.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-2fa-console-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-2fa-rate-limit-update.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-admin-user-separation.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-alerts-advanced-fixes.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-alerts-infinite-loop-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-all-tabs-realtime-updates.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-allow-messages-feature.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-ban-duration-utils.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-complete-message-system.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-country-flags.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-email-update-console-errors.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-final-forgot-password-fixes.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-forgot-password-system.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-identity-verification-system.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-location-translations.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-login-credentials.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-message-read-status.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-messages-and-blocking-fixes.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-notifications-header.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-page-title-language-switching.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-public-profile-translations.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-realtime-updates-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-review-again-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-scroll-navigation.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-temporary-password-page-fixes.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-unread-messages-counter.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-user-presence-system.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-account-data-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-admin-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-complete-system.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-details-modal-improvements.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-improved-flow.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-modal-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-step1-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-step2-fix.html
+C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (17)/test-verification-tab-fixes.html
+
+  X [ERROR] Cannot assign to "data" because it is a constant
+
+    src/contexts/AuthContext.tsx:621:14:
+      621 │               data = retryData;
+          ╵               ~~~~
+
+  The symbol "data" was declared a constant here:
+
+    src/contexts/AuthContext.tsx:598:14:
+      598 │       const { data, error } = await authService.signIn(email, pas...
+          ╵               ~~~~
+
+
+X [ERROR] Cannot assign to "error" because it is a constant
+
+    src/contexts/AuthContext.tsx:622:14:
+      622 │               error = null;
+          ╵               ~~~~~
+
+  The symbol "error" was declared a constant here:
+
+    src/contexts/AuthContext.tsx:598:20:
+      598 │       const { data, error } = await authService.signIn(email, pas...
+          ╵                     ~~~~~
+
+
+    at failureErrorWithLog (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.j
+s:1467:15)
+    at C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.js:926:25
+    at runOnEndCallbacks (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.js:
+1307:45)
+    at buildResponseToResult (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main
+.js:924:7)
+    at C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.js:936:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\ma
+in.js:935:54)
+    at handleRequest (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.js:628:
+17)
+    at handleIncomingPacket (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main.
+js:653:7)
+    at Socket.readFromStdout (C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (17)\node_modules\esbuild\lib\main
+.js:581:7)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+
+
+----------------
+
+
+PS C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (15)> npm run build
+
+> rezge-islamic-marriage@0.0.0 build
+> vite build
+
+vite v7.1.1 building for production...
+✓ 14 modules transformed.
+✗ Build failed in 15.70s
+error during build:
+[vite:json] [plugin vite:json] src/locales/ar.json (3037:36): Failed to parse JSON file, invalid JS
+ON syntax found at position 136771
+file: C:/Users/qwiklabs/Downloads/Update 15-08-2025-00-13 (15)/src/locales/ar.json:3037:36
+
+3035:         "likeAddedDesc": "تم إضافة إعجابك بالتعليق",
+3036:         "likeError": "فشل في الإعجاب",
+3037:         "likeErrorDesc": "حدث خطأ أثن
+                                          ^
+
+    at getRollupError (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_mo
+dules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_modules/rol
+lup/dist/es/shared/parseAst.js:397:42)
+    at Object.error (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_modu
+les/rollup/dist/es/shared/node-entry.js:22029:20)
+    at Object.error (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_modu
+les/rollup/dist/es/shared/node-entry.js:21091:42)
+    at Object.handler (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_mo
+dules/vite/dist/node/chunks/dep-eRCq8YxU.js:9111:11)
+    at Object.handler (file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_mo
+dules/vite/dist/node/chunks/dep-eRCq8YxU.js:34548:13)
+    at file:///C:/Users/qwiklabs/Downloads/Update%2015-08-2025-00-13%20(15)/node_modules/rollup/dis
+t/es/shared/node-entry.js:22351:40
+PS C:\Users\qwiklabs\Downloads\Update 15-08-2025-00-13 (15)>

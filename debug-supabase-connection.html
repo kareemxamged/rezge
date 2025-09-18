@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخيص مشكلة اتصال Supabase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            direction: rtl;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .error-box {
+            background: #fee;
+            border: 1px solid #fcc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-family: monospace;
+            direction: ltr;
+            text-align: left;
+            font-size: 12px;
+        }
+        .solution {
+            background: #efe;
+            border: 1px solid #cfc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .info {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .step {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .test-result {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 تشخيص مشكلة اتصال Supabase</h1>
+        
+        <div class="error-box">
+            <strong>الخطأ المبلغ عنه:</strong><br>
+            POST https://sbtzngewizgeqzfbhfjy.supabase.co/auth/v1/token?grant_type=refresh_token net::ERR_CONNECTION_CLOSED<br><br>
+            TypeError: Failed to fetch<br>
+            at _refreshAccessToken (supabase-js.js:6489:20)<br>
+            at _callRefreshToken (supabase-js.js:6584:42)
+        </div>
+
+        <h2>📋 تشخيص المشكلة</h2>
+        
+        <div class="warning">
+            <strong>⚠️ نوع المشكلة:</strong><br>
+            خطأ في الاتصال مع خادم Supabase أثناء تجديد رمز المصادقة (refresh token)
+        </div>
+
+        <h3>🔍 الأسباب المحتملة</h3>
+        
+        <div class="step">
+            <strong>1. مشاكل الشبكة:</strong>
+            <ul>
+                <li>انقطاع مؤقت في الإنترنت</li>
+                <li>مشاكل في DNS</li>
+                <li>حجب من جدار الحماية</li>
+                <li>مشاكل في ISP</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <strong>2. مشاكل Supabase:</strong>
+            <ul>
+                <li>انتهاء صلاحية refresh token</li>
+                <li>مشاكل في خادم Supabase</li>
+                <li>تحديثات في API</li>
+                <li>مشاكل في إعدادات المشروع</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <strong>3. مشاكل المتصفح:</strong>
+            <ul>
+                <li>مشاكل في CORS</li>
+                <li>ذاكرة التخزين المؤقت</li>
+                <li>إضافات المتصفح</li>
+                <li>إعدادات الأمان</li>
+            </ul>
+        </div>
+
+        <h2>🧪 اختبارات التشخيص</h2>
+
+        <div class="step">
+            <strong>1. اختبار الاتصال بـ Supabase:</strong>
+            <button onclick="testSupabaseConnection()">اختبار الاتصال</button>
+            <div id="connectionTest" class="test-result"></div>
+        </div>
+
+        <div class="step">
+            <strong>2. اختبار DNS:</strong>
+            <button onclick="testDNS()">اختبار DNS</button>
+            <div id="dnsTest" class="test-result"></div>
+        </div>
+
+        <div class="step">
+            <strong>3. فحص حالة Supabase:</strong>
+            <button onclick="checkSupabaseStatus()">فحص الحالة</button>
+            <div id="statusTest" class="test-result"></div>
+        </div>
+
+        <h2>🛠️ الحلول المقترحة</h2>
+
+        <div class="solution">
+            <h3>الحل 1: إعادة تعيين المصادقة</h3>
+            <p>مسح بيانات المصادقة المحلية وإعادة تسجيل الدخول:</p>
+            <button onclick="showAuthReset()">عرض الخطوات</button>
+            <div id="authReset" style="display:none;">
+                <ol>
+                    <li>افتح أدوات المطور (F12)</li>
+                    <li>اذهب إلى تبويب Application/Storage</li>
+                    <li>احذف جميع بيانات localStorage المتعلقة بـ Supabase</li>
+                    <li>احذف جميع بيانات sessionStorage</li>
+                    <li>أعد تحميل الصفحة</li>
+                    <li>سجل دخول جديد</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="solution">
+            <h3>الحل 2: تحسين معالجة الأخطاء</h3>
+            <p>إضافة معالجة أفضل لأخطاء الاتصال:</p>
+            <button onclick="showErrorHandling()">عرض الكود</button>
+            <div id="errorHandling" style="display:none;">
+                <pre style="background:#f8f9fa; padding:10px; border-radius:5px; overflow-x:auto;">
+// في AuthContext.tsx
+const handleSupabaseError = (error: any) => {
+  if (error.message?.includes('Failed to fetch') || 
+      error.message?.includes('ERR_CONNECTION_CLOSED')) {
+    console.warn('🔄 مشكلة اتصال مؤقتة مع Supabase');
+    
+    // محاولة إعادة الاتصال بعد تأخير
+    setTimeout(() => {
+      window.location.reload();
+    }, 5000);
+    
+    return;
+  }
+  
+  // معالجة أخطاء أخرى
+  console.error('خطأ Supabase:', error);
+};
+
+// تحسين session management
+supabase.auth.onAuthStateChange((event, session) => {
+  if (event === 'TOKEN_REFRESHED') {
+    console.log('✅ تم تجديد الرمز بنجاح');
+  } else if (event === 'SIGNED_OUT') {
+    localStorage.clear();
+    sessionStorage.clear();
+  }
+});
+                </pre>
+            </div>
+        </div>
+
+        <div class="solution">
+            <h3>الحل 3: إعادة المحاولة التلقائية</h3>
+            <p>تطبيق نظام إعادة المحاولة للطلبات الفاشلة:</p>
+            <button onclick="showRetryLogic()">عرض الكود</button>
+            <div id="retryLogic" style="display:none;">
+                <pre style="background:#f8f9fa; padding:10px; border-radius:5px; overflow-x:auto;">
+// دالة إعادة المحاولة
+const retrySupabaseRequest = async (requestFn: () => Promise<any>, maxRetries = 3) => {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      return await requestFn();
+    } catch (error: any) {
+      if (i === maxRetries - 1) throw error;
+      
+      if (error.message?.includes('Failed to fetch') || 
+          error.message?.includes('ERR_CONNECTION_CLOSED')) {
+        console.warn(`🔄 محاولة ${i + 1}/${maxRetries} فشلت، إعادة المحاولة...`);
+        await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+        continue;
+      }
+      
+      throw error;
+    }
+  }
+};
+
+// استخدام الدالة
+const fetchUserProfile = async () => {
+  return retrySupabaseRequest(async () => {
+    const { data, error } = await supabase
+      .from('users')
+      .select('*')
+      .eq('id', userId)
+      .single();
+    
+    if (error) throw error;
+    return data;
+  });
+};
+                </pre>
+            </div>
+        </div>
+
+        <div class="solution">
+            <h3>الحل 4: تحسين إعدادات Supabase</h3>
+            <p>تحسين إعدادات العميل لمعالجة أفضل للأخطاء:</p>
+            <button onclick="showSupabaseConfig()">عرض الكود</button>
+            <div id="supabaseConfig" style="display:none;">
+                <pre style="background:#f8f9fa; padding:10px; border-radius:5px; overflow-x:auto;">
+// في lib/supabase.ts
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true,
+    // تحسين إعدادات إعادة المحاولة
+    retryAttempts: 3,
+    // تقليل timeout للكشف السريع عن مشاكل الاتصال
+    timeout: 10000,
+  },
+  // إعدادات إضافية للشبكة
+  global: {
+    headers: {
+      'X-Client-Info': 'rezge-app',
+    },
+  },
+  // معالجة أخطاء الشبكة
+  realtime: {
+    params: {
+      eventsPerSecond: 10,
+    },
+  },
+});
+
+// مراقب حالة الاتصال
+supabase.auth.onAuthStateChange((event, session) => {
+  console.log('🔐 Auth event:', event);
+  
+  if (event === 'TOKEN_REFRESHED') {
+    console.log('✅ تم تجديد رمز المصادقة');
+  } else if (event === 'SIGNED_OUT') {
+    console.log('👋 تم تسجيل الخروج');
+    // تنظيف البيانات المحلية
+    localStorage.removeItem('supabase.auth.token');
+    sessionStorage.clear();
+  }
+});
+                </pre>
+            </div>
+        </div>
+
+        <h2>🚨 حلول سريعة</h2>
+
+        <div class="info">
+            <h3>للمستخدمين:</h3>
+            <button onclick="quickUserFix()">تطبيق الحل السريع</button>
+            <div id="userFix" style="display:none;">
+                <ol>
+                    <li><strong>أعد تحميل الصفحة</strong> (Ctrl+F5)</li>
+                    <li><strong>امسح ذاكرة التخزين المؤقت</strong></li>
+                    <li><strong>جرب متصفح آخر</strong></li>
+                    <li><strong>تحقق من الإنترنت</strong></li>
+                    <li><strong>سجل خروج ودخول مرة أخرى</strong></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>للمطورين:</h3>
+            <button onclick="quickDevFix()">تطبيق الحل التقني</button>
+            <div id="devFix" style="display:none;">
+                <ol>
+                    <li>تحقق من حالة Supabase: <a href="https://status.supabase.com" target="_blank">status.supabase.com</a></li>
+                    <li>راجع إعدادات CORS في مشروع Supabase</li>
+                    <li>تحقق من صحة environment variables</li>
+                    <li>راجع logs في Supabase Dashboard</li>
+                    <li>طبق معالجة الأخطاء المحسنة</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="warning">
+            <strong>📝 ملاحظة مهمة:</strong><br>
+            هذا الخطأ عادة ما يكون مؤقتاً ويحل نفسه. إذا استمر، قد تحتاج لمراجعة إعدادات الشبكة أو الاتصال بدعم Supabase.
+        </div>
+    </div>
+
+    <script>
+        function testSupabaseConnection() {
+            const result = document.getElementById('connectionTest');
+            result.style.display = 'block';
+            result.innerHTML = '🔄 جاري اختبار الاتصال...';
+            
+            fetch('https://sbtzngewizgeqzfbhfjy.supabase.co/rest/v1/', {
+                method: 'HEAD',
+                mode: 'no-cors'
+            }).then(() => {
+                result.className = 'test-result success';
+                result.innerHTML = '✅ الاتصال مع Supabase يعمل بشكل طبيعي';
+            }).catch(error => {
+                result.className = 'test-result error';
+                result.innerHTML = '❌ فشل الاتصال مع Supabase: ' + error.message;
+            });
+        }
+        
+        function testDNS() {
+            const result = document.getElementById('dnsTest');
+            result.style.display = 'block';
+            result.innerHTML = '🔄 جاري اختبار DNS...';
+            
+            fetch('https://8.8.8.8', { method: 'HEAD', mode: 'no-cors' })
+                .then(() => {
+                    result.className = 'test-result success';
+                    result.innerHTML = '✅ DNS يعمل بشكل طبيعي';
+                }).catch(() => {
+                    result.className = 'test-result error';
+                    result.innerHTML = '❌ مشكلة في DNS أو الاتصال بالإنترنت';
+                });
+        }
+        
+        function checkSupabaseStatus() {
+            const result = document.getElementById('statusTest');
+            result.style.display = 'block';
+            result.innerHTML = '🔄 جاري فحص حالة Supabase...';
+            
+            result.className = 'test-result';
+            result.innerHTML = '📊 تحقق من حالة Supabase على: <a href="https://status.supabase.com" target="_blank">status.supabase.com</a>';
+        }
+        
+        function showAuthReset() {
+            document.getElementById('authReset').style.display = 'block';
+        }
+        
+        function showErrorHandling() {
+            document.getElementById('errorHandling').style.display = 'block';
+        }
+        
+        function showRetryLogic() {
+            document.getElementById('retryLogic').style.display = 'block';
+        }
+        
+        function showSupabaseConfig() {
+            document.getElementById('supabaseConfig').style.display = 'block';
+        }
+        
+        function quickUserFix() {
+            document.getElementById('userFix').style.display = 'block';
+        }
+        
+        function quickDevFix() {
+            document.getElementById('devFix').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

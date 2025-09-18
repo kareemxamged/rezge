@@ -1,0 +1,31 @@
+{
+  "name": "rezge-smtp-server",
+  "version": "1.0.0",
+  "description": "خادم SMTP مستقل لموقع رزقي للزواج الإسلامي",
+  "main": "smtp-server.js",
+  "scripts": {
+    "start": "node smtp-server.js",
+    "dev": "nodemon smtp-server.js",
+    "install-deps": "npm install nodemailer cors",
+    "test": "curl http://localhost:3001/status"
+  },
+  "keywords": [
+    "smtp",
+    "email",
+    "server",
+    "rezge",
+    "independent"
+  ],
+  "author": "Rezge Team",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

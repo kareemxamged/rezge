@@ -1,0 +1,254 @@
+/* سكرول بار مخصص ومميز لمنصة رزقي */
+
+/* متغيرات الألوان للسكرول بار */
+:root {
+  /* ألوان السكرول بار العامة */
+  --scrollbar-width: 8px;
+  --scrollbar-track-bg: #f1f5f9;
+  --scrollbar-thumb-bg: #cbd5e1;
+  --scrollbar-thumb-hover-bg: #94a3b8;
+  --scrollbar-thumb-active-bg: #64748b;
+  
+  /* ألوان السكرول بار للإدارة */
+  --admin-scrollbar-width: 10px;
+  --admin-scrollbar-track-bg: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  --admin-scrollbar-thumb-bg: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  --admin-scrollbar-thumb-hover-bg: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+  --admin-scrollbar-thumb-active-bg: linear-gradient(135deg, #3730a3 0%, #312e81 100%);
+  
+  /* ألوان السكرول بار للموقع العام */
+  --main-scrollbar-track-bg: #fef7ed;
+  --main-scrollbar-thumb-bg: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  --main-scrollbar-thumb-hover-bg: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  --main-scrollbar-thumb-active-bg: linear-gradient(135deg, #c2410c 0%, #9a3412 100%);
+}
+
+/* السكرول بار العام للموقع */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-track-bg);
+}
+
+/* السكرول بار للمتصفحات المبنية على Webkit */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-radius: 10px;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-bg);
+  transform: scaleY(1.1);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-active-bg);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track-bg);
+}
+
+/* السكرول بار المميز للموقع العام */
+.main-site ::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+.main-site ::-webkit-scrollbar-track {
+  background: var(--main-scrollbar-track-bg);
+  border-radius: 12px;
+  margin: 3px;
+  box-shadow: inset 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.main-site ::-webkit-scrollbar-thumb {
+  background: var(--main-scrollbar-thumb-bg);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);
+}
+
+.main-site ::-webkit-scrollbar-thumb:hover {
+  background: var(--main-scrollbar-thumb-hover-bg);
+  transform: scaleY(1.2);
+  box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
+}
+
+.main-site ::-webkit-scrollbar-thumb:active {
+  background: var(--main-scrollbar-thumb-active-bg);
+  transform: scaleY(1.1);
+}
+
+/* السكرول بار المميز للوحة التحكم الإدارية */
+.modern-admin-layout ::-webkit-scrollbar {
+  width: var(--admin-scrollbar-width);
+  height: var(--admin-scrollbar-width);
+}
+
+.modern-admin-layout ::-webkit-scrollbar-track {
+  background: var(--admin-scrollbar-track-bg);
+  border-radius: 15px;
+  margin: 4px;
+  box-shadow: inset 0 0 5px rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.05);
+}
+
+.modern-admin-layout ::-webkit-scrollbar-thumb {
+  background: var(--admin-scrollbar-thumb-bg);
+  border-radius: 15px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 2px 8px rgba(99, 102, 241, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.modern-admin-layout ::-webkit-scrollbar-thumb:hover {
+  background: var(--admin-scrollbar-thumb-hover-bg);
+  transform: scaleY(1.15) scaleX(1.1);
+  box-shadow: 
+    0 4px 12px rgba(99, 102, 241, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.modern-admin-layout ::-webkit-scrollbar-thumb:active {
+  background: var(--admin-scrollbar-thumb-active-bg);
+  transform: scaleY(1.05) scaleX(1.05);
+  box-shadow: 
+    0 2px 6px rgba(99, 102, 241, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* السكرول بار للقائمة الجانبية */
+.modern-admin-sidebar ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modern-admin-sidebar ::-webkit-scrollbar-track {
+  background: rgba(99, 102, 241, 0.05);
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.modern-admin-sidebar ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(79, 70, 229, 0.3) 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.modern-admin-sidebar ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.5) 0%, rgba(79, 70, 229, 0.5) 100%);
+}
+
+/* السكرول بار للنوافذ المنبثقة */
+.modal ::-webkit-scrollbar,
+[class*="modal"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal ::-webkit-scrollbar-track,
+[class*="modal"] ::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.modal ::-webkit-scrollbar-thumb,
+[class*="modal"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.modal ::-webkit-scrollbar-thumb:hover,
+[class*="modal"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
+}
+
+/* السكرول بار للجداول */
+.table-container ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-container ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.table-container ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.table-container ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}
+
+/* تأثيرات خاصة للسكرول بار */
+@keyframes scrollbar-glow {
+  0% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.3); }
+  50% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); }
+  100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.3); }
+}
+
+/* السكرول بار مع تأثير التوهج للإدارة */
+.modern-admin-layout:hover ::-webkit-scrollbar-thumb {
+  animation: scrollbar-glow 2s ease-in-out infinite;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .modern-admin-layout ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* تحسينات للشاشات اللمسية */
+@media (hover: none) and (pointer: coarse) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+  }
+}
+
+/* السكرول بار للوضع المظلم (للاستخدام المستقبلي) */
+.dark-mode ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}

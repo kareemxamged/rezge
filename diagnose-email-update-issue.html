@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخيص مشكلة تحديث الإيميل - رزقي</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        .section h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #5a67d8;
+        }
+        .result {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .success {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            color: #2f855a;
+        }
+        .error {
+            background: #fed7d7;
+            border: 1px solid #feb2b2;
+            color: #c53030;
+        }
+        .info {
+            background: #ebf8ff;
+            border: 1px solid #90cdf4;
+            color: #2b6cb0;
+        }
+        .warning {
+            background: #fffbeb;
+            border: 1px solid #f6e05e;
+            color: #d69e2e;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 تشخيص مشكلة تحديث الإيميل</h1>
+            <p>تشخيص شامل لمشكلة الأخطاء في الكونسول عند تأكيد تحديث الإيميل</p>
+        </div>
+
+        <!-- إعداد الاتصال -->
+        <div class="section">
+            <h3>🔗 إعداد الاتصال</h3>
+            <button class="btn" onclick="initSupabase()">إنشاء الاتصال</button>
+            <div id="connectionResult" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- فحص البيئة -->
+        <div class="section">
+            <h3>🌍 فحص البيئة</h3>
+            <button class="btn" onclick="checkEnvironment()">فحص البيئة</button>
+            <div id="environmentResult" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- فحص قاعدة البيانات -->
+        <div class="section">
+            <h3>🗄️ فحص قاعدة البيانات</h3>
+            <button class="btn" onclick="checkDatabase()">فحص الجداول والصلاحيات</button>
+            <div id="databaseResult" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- محاكاة العملية -->
+        <div class="section">
+            <h3>🧪 محاكاة العملية</h3>
+            <div class="form-group">
+                <label>معرف المستخدم للاختبار:</label>
+                <input type="text" id="testUserId" placeholder="أدخل معرف مستخدم للاختبار">
+            </div>
+            <button class="btn" onclick="simulateEmailUpdateProcess()">محاكاة تحديث الإيميل</button>
+            <div id="simulationResult" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- فحص الأخطاء الشائعة -->
+        <div class="section">
+            <h3>🐛 فحص الأخطاء الشائعة</h3>
+            <button class="btn" onclick="checkCommonErrors()">فحص الأخطاء الشائعة</button>
+            <div id="errorsResult" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- التوصيات -->
+        <div class="section">
+            <h3>💡 التوصيات والحلول</h3>
+            <button class="btn" onclick="generateRecommendations()">إنشاء التوصيات</button>
+            <div id="recommendationsResult" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        let supabase = null;
+
+        // إنشاء الاتصال
+        function initSupabase() {
+            try {
+                const url = 'https://sbtzngewizgeqzfbhfjy.supabase.co';
+                const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNidHpuZ2V3aXpnZXF6ZmJoZmp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM3MzI4NzEsImV4cCI6MjAzOTMwODg3MX0.kJJONnFPdKmKmT6wW7SzVgKHZgFHWqL_VhqJKqwqKqw';
+                
+                supabase = window.supabase.createClient(url, key);
+                showResult('connectionResult', 'success', '✅ تم إنشاء الاتصال بـ Supabase بنجاح');
+            } catch (error) {
+                showResult('connectionResult', 'error', `❌ فشل في إنشاء الاتصال: ${error.message}`);
+            }
+        }
+
+        // فحص البيئة
+        async function checkEnvironment() {
+            let results = [];
+            
+            // فحص متغيرات البيئة
+            results.push('🔍 فحص متغيرات البيئة:');
+            results.push(`- VITE_SUPABASE_URL: ${import.meta?.env?.VITE_SUPABASE_URL || 'غير محدد'}`);
+            results.push(`- VITE_SUPABASE_SERVICE_ROLE_KEY: ${import.meta?.env?.VITE_SUPABASE_SERVICE_ROLE_KEY ? 'محدد' : 'غير محدد'}`);
+            
+            // فحص المتصفح
+            results.push('\n🌐 معلومات المتصفح:');
+            results.push(`- User Agent: ${navigator.userAgent}`);
+            results.push(`- اللغة: ${navigator.language}`);
+            results.push(`- الوقت المحلي: ${new Date().toLocaleString()}`);
+            
+            // فحص الدعم للميزات
+            results.push('\n🔧 دعم الميزات:');
+            results.push(`- crypto.randomUUID: ${typeof crypto?.randomUUID === 'function' ? 'مدعوم' : 'غير مدعوم'}`);
+            results.push(`- fetch API: ${typeof fetch === 'function' ? 'مدعوم' : 'غير مدعوم'}`);
+            results.push(`- localStorage: ${typeof localStorage === 'object' ? 'مدعوم' : 'غير مدعوم'}`);
+            
+            showResult('environmentResult', 'info', results.join('\n'));
+        }
+
+        // فحص قاعدة البيانات
+        async function checkDatabase() {
+            if (!supabase) {
+                showResult('databaseResult', 'error', '❌ يرجى إنشاء الاتصال أولاً');
+                return;
+            }
+
+            let results = [];
+            
+            try {
+                // فحص جدول email_change_requests
+                results.push('🔍 فحص جدول email_change_requests:');
+                try {
+                    const { data, error } = await supabase
+                        .from('email_change_requests')
+                        .select('count')
+                        .limit(1);
+                    
+                    if (error) {
+                        results.push(`❌ خطأ في الوصول: ${error.message}`);
+                        results.push(`   - الكود: ${error.code}`);
+                        results.push(`   - التفاصيل: ${error.details}`);
+                    } else {
+                        results.push('✅ الجدول موجود ويمكن الوصول إليه');
+                    }
+                } catch (error) {
+                    results.push(`❌ خطأ في الاستعلام: ${error.message}`);
+                }
+
+                // فحص جدول users
+                results.push('\n🔍 فحص جدول users:');
+                try {
+                    const { data, error } = await supabase
+                        .from('users')
+                        .select('count')
+                        .limit(1);
+                    
+                    if (error) {
+                        results.push(`❌ خطأ في الوصول: ${error.message}`);
+                    } else {
+                        results.push('✅ الجدول موجود ويمكن الوصول إليه');
+                    }
+                } catch (error) {
+                    results.push(`❌ خطأ في الاستعلام: ${error.message}`);
+                }
+
+                // فحص المصادقة
+                results.push('\n🔍 فحص المصادقة:');
+                try {
+                    const { data: { user }, error } = await supabase.auth.getUser();
+                    if (error) {
+                        results.push(`❌ خطأ في المصادقة: ${error.message}`);
+                    } else if (user) {
+                        results.push(`✅ مستخدم مسجل دخول: ${user.email}`);
+                        results.push(`   - المعرف: ${user.id}`);
+                        results.push(`   - تاريخ الإنشاء: ${user.created_at}`);
+                    } else {
+                        results.push('⚠️ لا يوجد مستخدم مسجل دخول');
+                    }
+                } catch (error) {
+                    results.push(`❌ خطأ في فحص المصادقة: ${error.message}`);
+                }
+
+                showResult('databaseResult', 'info', results.join('\n'));
+
+            } catch (error) {
+                showResult('databaseResult', 'error', `❌ خطأ عام في فحص قاعدة البيانات: ${error.message}`);
+            }
+        }
+
+        // محاكاة العملية
+        async function simulateEmailUpdateProcess() {
+            if (!supabase) {
+                showResult('simulationResult', 'error', '❌ يرجى إنشاء الاتصال أولاً');
+                return;
+            }
+
+            const userId = document.getElementById('testUserId').value;
+            if (!userId) {
+                showResult('simulationResult', 'error', '❌ يرجى إدخال معرف المستخدم');
+                return;
+            }
+
+            let results = [];
+            
+            try {
+                results.push('🧪 بدء محاكاة تحديث الإيميل...');
+                results.push(`معرف المستخدم: ${userId}`);
+
+                // الخطوة 1: جلب بيانات المستخدم الحالية
+                results.push('\n📋 الخطوة 1: جلب بيانات المستخدم');
+                const { data: currentUser, error: fetchError } = await supabase
+                    .from('users')
+                    .select('email, phone, first_name, last_name')
+                    .eq('id', userId)
+                    .single();
+
+                if (fetchError) {
+                    results.push(`❌ فشل في جلب بيانات المستخدم: ${fetchError.message}`);
+                    showResult('simulationResult', 'error', results.join('\n'));
+                    return;
+                }
+
+                results.push(`✅ تم جلب البيانات: ${currentUser.first_name} ${currentUser.last_name}`);
+                results.push(`   - الإيميل الحالي: ${currentUser.email}`);
+
+                // الخطوة 2: محاكاة إنشاء طلب تغيير الإيميل
+                results.push('\n📧 الخطوة 2: إنشاء طلب تغيير الإيميل');
+                const newEmail = `test-${Date.now()}@example.com`;
+                const verificationToken = crypto.randomUUID();
+
+                const { data: requestData, error: requestError } = await supabase
+                    .from('email_change_requests')
+                    .insert({
+                        user_id: userId,
+                        current_email: currentUser.email,
+                        new_email: newEmail,
+                        verification_token: verificationToken,
+                        expires_at: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+                        verified: false
+                    })
+                    .select()
+                    .single();
+
+                if (requestError) {
+                    results.push(`❌ فشل في إنشاء طلب التغيير: ${requestError.message}`);
+                    results.push(`   - الكود: ${requestError.code}`);
+                    results.push(`   - التفاصيل: ${requestError.details}`);
+                } else {
+                    results.push(`✅ تم إنشاء طلب التغيير بنجاح`);
+                    results.push(`   - الإيميل الجديد: ${newEmail}`);
+                    results.push(`   - رمز التأكيد: ${verificationToken}`);
+                }
+
+                // الخطوة 3: محاكاة تأكيد التغيير
+                if (!requestError && requestData) {
+                    results.push('\n✅ الخطوة 3: تأكيد تغيير الإيميل');
+                    
+                    // تحديث حالة الطلب
+                    const { error: updateRequestError } = await supabase
+                        .from('email_change_requests')
+                        .update({ 
+                            verified: true,
+                            updated_at: new Date().toISOString()
+                        })
+                        .eq('id', requestData.id);
+
+                    if (updateRequestError) {
+                        results.push(`❌ فشل في تحديث حالة الطلب: ${updateRequestError.message}`);
+                    } else {
+                        results.push('✅ تم تحديث حالة الطلب');
+                    }
+
+                    // تحديث الإيميل في جدول users
+                    const { error: updateUserError } = await supabase
+                        .from('users')
+                        .update({ 
+                            email: newEmail,
+                            updated_at: new Date().toISOString()
+                        })
+                        .eq('id', userId);
+
+                    if (updateUserError) {
+                        results.push(`❌ فشل في تحديث إيميل المستخدم: ${updateUserError.message}`);
+                        results.push(`   - الكود: ${updateUserError.code}`);
+                        results.push(`   - التفاصيل: ${updateUserError.details}`);
+                    } else {
+                        results.push('✅ تم تحديث إيميل المستخدم في قاعدة البيانات');
+                    }
+
+                    // تنظيف: حذف طلب التغيير التجريبي
+                    await supabase
+                        .from('email_change_requests')
+                        .delete()
+                        .eq('id', requestData.id);
+
+                    // إعادة الإيميل الأصلي
+                    await supabase
+                        .from('users')
+                        .update({ email: currentUser.email })
+                        .eq('id', userId);
+
+                    results.push('\n🧹 تم تنظيف البيانات التجريبية');
+                }
+
+                showResult('simulationResult', 'success', results.join('\n'));
+
+            } catch (error) {
+                results.push(`\n❌ خطأ غير متوقع: ${error.message}`);
+                showResult('simulationResult', 'error', results.join('\n'));
+            }
+        }
+
+        // فحص الأخطاء الشائعة
+        async function checkCommonErrors() {
+            let results = [];
+            
+            results.push('🔍 فحص الأخطاء الشائعة:');
+            
+            // فحص RLS policies
+            results.push('\n1. فحص Row Level Security (RLS):');
+            results.push('   - تأكد من وجود سياسات RLS للجداول');
+            results.push('   - تأكد من صلاحيات المستخدم للوصول للجداول');
+            
+            // فحص Service Role Key
+            results.push('\n2. فحص Service Role Key:');
+            const hasServiceKey = import.meta?.env?.VITE_SUPABASE_SERVICE_ROLE_KEY;
+            if (hasServiceKey) {
+                results.push('   ✅ Service Role Key محدد');
+            } else {
+                results.push('   ⚠️ Service Role Key غير محدد');
+                results.push('   💡 هذا قد يمنع تحديث Supabase Auth');
+            }
+            
+            // فحص CORS
+            results.push('\n3. فحص CORS:');
+            results.push('   - تأكد من إعدادات CORS في Supabase');
+            results.push('   - تأكد من السماح للدومين الحالي');
+            
+            // فحص Network
+            results.push('\n4. فحص الشبكة:');
+            results.push('   - تأكد من الاتصال بالإنترنت');
+            results.push('   - تأكد من عدم حجب Supabase من قبل Firewall');
+            
+            showResult('errorsResult', 'warning', results.join('\n'));
+        }
+
+        // إنشاء التوصيات
+        function generateRecommendations() {
+            let recommendations = [];
+            
+            recommendations.push('💡 التوصيات والحلول:');
+            
+            recommendations.push('\n🔧 الحلول المقترحة:');
+            recommendations.push('1. إضافة Service Role Key:');
+            recommendations.push('   - احصل على Service Role Key من لوحة تحكم Supabase');
+            recommendations.push('   - أضفه في ملف .env.local');
+            recommendations.push('   - VITE_SUPABASE_SERVICE_ROLE_KEY=your_key_here');
+            
+            recommendations.push('\n2. فحص سياسات RLS:');
+            recommendations.push('   - تأكد من وجود سياسات للجدول email_change_requests');
+            recommendations.push('   - تأكد من السماح للمستخدمين بالقراءة والكتابة');
+            
+            recommendations.push('\n3. معالجة الأخطاء:');
+            recommendations.push('   - أضف try-catch شامل حول عمليات قاعدة البيانات');
+            recommendations.push('   - سجل الأخطاء بتفصيل أكبر');
+            recommendations.push('   - أضف رسائل خطأ واضحة للمستخدم');
+            
+            recommendations.push('\n4. تحسين تجربة المستخدم:');
+            recommendations.push('   - أضف مؤشر تحميل أثناء العملية');
+            recommendations.push('   - أضف رسائل تأكيد واضحة');
+            recommendations.push('   - أضف إمكانية إعادة المحاولة');
+            
+            recommendations.push('\n🔍 خطوات التشخيص:');
+            recommendations.push('1. افتح Developer Tools في المتصفح');
+            recommendations.push('2. انتقل إلى تبويب Console');
+            recommendations.push('3. قم بتحديث الإيميل');
+            recommendations.push('4. راقب الأخطاء والتحذيرات');
+            recommendations.push('5. انسخ الأخطاء وشاركها مع المطور');
+            
+            showResult('recommendationsResult', 'info', recommendations.join('\n'));
+        }
+
+        function showResult(elementId, type, message) {
+            const element = document.getElementById(elementId);
+            element.className = `result ${type}`;
+            element.textContent = message;
+            element.style.display = 'block';
+        }
+
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 تم تحميل صفحة تشخيص مشكلة تحديث الإيميل');
+        });
+    </script>
+</body>
+</html>

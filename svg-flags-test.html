@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار أعلام SVG</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .flag-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .flag-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .flag-item:hover {
+            transform: translateY(-5px);
+        }
+        .flag-display {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+        .flag-svg {
+            width: 80px;
+            height: auto;
+            max-height: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .flag-emoji {
+            font-size: 48px;
+            line-height: 1;
+        }
+        .country-name {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+            font-size: 18px;
+        }
+        .flag-type {
+            font-size: 12px;
+            color: #666;
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .svg-flag {
+            border: 2px solid #4CAF50;
+        }
+        .emoji-flag {
+            border: 2px solid #FF9800;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .comparison-item {
+            padding: 10px;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>اختبار أعلام SVG المحلية</h1>
+    <p>مقارنة بين أعلام SVG المحلية ورموز Unicode</p>
+    
+    <div class="flag-container">
+        <!-- السعودية -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">المملكة العربية السعودية</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/saudi arabia.svg" alt="علم السعودية" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇸🇦</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الإمارات -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">الإمارات العربية المتحدة</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/united arab emirates.svg" alt="علم الإمارات" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇦🇪</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الكويت -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">الكويت</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/kuwait.svg" alt="علم الكويت" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇰🇼</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- مصر -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">مصر</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/egypt.svg" alt="علم مصر" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇪🇬</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الأردن -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">الأردن</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/jordan.svg" alt="علم الأردن" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇯🇴</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قطر -->
+        <div class="flag-item svg-flag">
+            <div class="country-name">قطر</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="flag-type">SVG محلي</div>
+                    <div class="flag-display">
+                        <img src="/countries/qatar.svg" alt="علم قطر" class="flag-svg">
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="flag-type">Unicode Emoji</div>
+                    <div class="flag-display">
+                        <span class="flag-emoji">🇶🇦</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 10px; border: 2px solid #4CAF50;">
+        <h3>✅ مزايا أعلام SVG المحلية:</h3>
+        <ul>
+            <li>جودة عالية وحادة في جميع الأحجام</li>
+            <li>لا تعتمد على دعم المتصفح لرموز Unicode</li>
+            <li>تحميل سريع من الخادم المحلي</li>
+            <li>تصميم موحد ومتسق</li>
+            <li>إمكانية التخصيص والتعديل</li>
+        </ul>
+    </div>
+
+    <script>
+        // اختبار تحميل أعلام SVG
+        function testSVGFlags() {
+            const svgImages = document.querySelectorAll('.flag-svg');
+            let loadedCount = 0;
+            let failedCount = 0;
+
+            svgImages.forEach(img => {
+                img.onload = () => {
+                    loadedCount++;
+                    console.log(`تم تحميل علم SVG: ${img.alt}`);
+                    updateStatus();
+                };
+                
+                img.onerror = () => {
+                    failedCount++;
+                    console.error(`فشل تحميل علم SVG: ${img.alt}`);
+                    updateStatus();
+                };
+            });
+
+            function updateStatus() {
+                if (loadedCount + failedCount === svgImages.length) {
+                    const statusDiv = document.createElement('div');
+                    statusDiv.style.cssText = 'background: #f0f8ff; padding: 15px; margin: 20px 0; border-radius: 8px; border: 2px solid #2196F3;';
+                    statusDiv.innerHTML = `
+                        <h4>📊 نتائج اختبار تحميل أعلام SVG:</h4>
+                        <p>✅ تم تحميل: ${loadedCount} علم</p>
+                        <p>❌ فشل التحميل: ${failedCount} علم</p>
+                        <p>📈 معدل النجاح: ${Math.round((loadedCount / svgImages.length) * 100)}%</p>
+                    `;
+                    document.body.appendChild(statusDiv);
+                }
+            }
+        }
+
+        // تشغيل الاختبار عند تحميل الصفحة
+        window.addEventListener('load', testSVGFlags);
+    </script>
+</body>
+</html>

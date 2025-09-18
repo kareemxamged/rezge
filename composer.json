@@ -1,0 +1,27 @@
+{
+    "name": "rezge/email-system",
+    "description": "نظام الإشعارات البريدية لموقع رزقي",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rezge\\": "src/"
+        }
+    },
+    "scripts": {
+        "install-phpmailer": [
+            "composer require phpmailer/phpmailer"
+        ],
+        "test-smtp": [
+            "php -r \"echo 'Testing SMTP configuration...\\n';\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

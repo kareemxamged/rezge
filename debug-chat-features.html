@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخيص مشاكل ميزات الشات - رزقي</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            direction: rtl;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .header h1 {
+            color: #2d3748;
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
+        .debug-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            background: #f8fafc;
+        }
+        .debug-section h2 {
+            color: #2d3748;
+            margin: 0 0 15px 0;
+            font-size: 1.3em;
+        }
+        .step {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #4299e1;
+        }
+        .step h3 {
+            color: #2c5282;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+        }
+        .step p {
+            color: #4a5568;
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .code {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #2d3748;
+            margin: 10px 0;
+        }
+        .warning {
+            background: #fffbf0;
+            border: 2px solid #f6ad55;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .warning h4 {
+            color: #c05621;
+            margin: 0 0 10px 0;
+        }
+        .warning p {
+            color: #dd6b20;
+            margin: 5px 0;
+        }
+        .success {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .success h4 {
+            color: #22543d;
+            margin: 0 0 10px 0;
+        }
+        .success p {
+            color: #2f855a;
+            margin: 5px 0;
+        }
+        .error {
+            background: #fed7d7;
+            border: 2px solid #fc8181;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .error h4 {
+            color: #c53030;
+            margin: 0 0 10px 0;
+        }
+        .error p {
+            color: #e53e3e;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 تشخيص مشاكل ميزات الشات</h1>
+            <p>دليل خطوة بخطوة لتشخيص وحل مشاكل قائمة الثلاث نقاط</p>
+        </div>
+
+        <div class="debug-section">
+            <h2>🚨 المشكلة المُبلغ عنها</h2>
+            <div class="error">
+                <h4>الأعراض:</h4>
+                <p>• النقر على قائمة الثلاث نقاط لا يعمل</p>
+                <p>• الخيارات (حظر، إبلاغ، حذف) لا تستجيب للنقر</p>
+                <p>• لا توجد استجابة أو رسائل خطأ</p>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h2>🔧 خطوات التشخيص</h2>
+            
+            <div class="step">
+                <h3>الخطوة 1: فتح أدوات المطور</h3>
+                <p>1. اضغط F12 أو انقر بالزر الأيمن واختر "فحص العنصر"</p>
+                <p>2. انتقل إلى تبويب "Console"</p>
+                <p>3. امسح الكونسول بالنقر على أيقونة المسح</p>
+            </div>
+
+            <div class="step">
+                <h3>الخطوة 2: اختبار زر الثلاث نقاط</h3>
+                <p>1. انتقل إلى صفحة الرسائل وافتح محادثة</p>
+                <p>2. انقر على زر الثلاث نقاط في أعلى الشات</p>
+                <p>3. راقب الكونسول للرسائل التالية:</p>
+                <div class="code">
+MessagesPage rendered, showMoreMenu: false, activeConversation: [conversation-id]
+More menu clicked, current state: false
+                </div>
+            </div>
+
+            <div class="step">
+                <h3>الخطوة 3: التحقق من ظهور القائمة</h3>
+                <p>1. بعد النقر، يجب أن تظهر قائمة منسدلة</p>
+                <p>2. إذا لم تظهر، تحقق من الكونسول للأخطاء</p>
+                <p>3. تأكد من أن showMoreMenu تغيرت إلى true</p>
+            </div>
+
+            <div class="step">
+                <h3>الخطوة 4: اختبار خيارات القائمة</h3>
+                <p>1. انقر على "الإبلاغ عن المستخدم"</p>
+                <p>2. يجب أن تظهر الرسالة في الكونسول:</p>
+                <div class="code">Report user clicked
+handleReportUser called</div>
+                <p>3. كرر نفس الاختبار للخيارات الأخرى</p>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h2>🔍 الأسباب المحتملة والحلول</h2>
+            
+            <div class="step">
+                <h3>السبب 1: مشكلة في CSS أو z-index</h3>
+                <p><strong>الأعراض:</strong> القائمة لا تظهر أو تظهر خلف عناصر أخرى</p>
+                <p><strong>الحل:</strong> تحقق من أن z-index للقائمة عالي بما فيه الكفاية (z-50)</p>
+                <div class="code">className="absolute left-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-slate-200 py-2 z-50"</div>
+            </div>
+
+            <div class="step">
+                <h3>السبب 2: تضارب في معالجات الأحداث</h3>
+                <p><strong>الأعراض:</strong> النقر لا يسجل أو يتم إلغاؤه</p>
+                <p><strong>الحل:</strong> استخدام stopPropagation() في معالجات الأحداث</p>
+                <div class="code">onClick={(e) => {
+  e.stopPropagation();
+  handleReportUser();
+}}</div>
+            </div>
+
+            <div class="step">
+                <h3>السبب 3: مشكلة في حالة المكون</h3>
+                <p><strong>الأعراض:</strong> showMoreMenu لا يتغير</p>
+                <p><strong>الحل:</strong> تحقق من أن useState يعمل بشكل صحيح</p>
+                <div class="code">const [showMoreMenu, setShowMoreMenu] = useState(false);</div>
+            </div>
+
+            <div class="step">
+                <h3>السبب 4: مشكلة في الدوال</h3>
+                <p><strong>الأعراض:</strong> الدوال غير معرفة أو تحتوي على أخطاء</p>
+                <p><strong>الحل:</strong> تحقق من تعريف الدوال وعدم وجود أخطاء syntax</p>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h2>🛠️ الإصلاحات المطبقة</h2>
+            
+            <div class="success">
+                <h4>✅ الإصلاحات الحالية:</h4>
+                <p>• إضافة stopPropagation() لجميع معالجات الأحداث</p>
+                <p>• إضافة class "more-menu-container" للحاوية</p>
+                <p>• تحسين معالج النقر خارج القائمة</p>
+                <p>• إضافة تسجيل مفصل للتشخيص</p>
+                <p>• تحسين معالجة الأخطاء في الدوال</p>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h2>📋 قائمة التحقق</h2>
+            
+            <div class="step">
+                <h3>تأكد من:</h3>
+                <p>⬜ ظهور رسائل التشخيص في الكونسول</p>
+                <p>⬜ تغيير حالة showMoreMenu عند النقر</p>
+                <p>⬜ ظهور القائمة المنسدلة</p>
+                <p>⬜ استجابة خيارات القائمة للنقر</p>
+                <p>⬜ عدم وجود أخطاء JavaScript في الكونسول</p>
+                <p>⬜ عمل معالج النقر خارج القائمة</p>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h2>🚀 الخطوات التالية</h2>
+            
+            <div class="warning">
+                <h4>إذا استمرت المشكلة:</h4>
+                <p>1. تحقق من إصدار React وتوافق المكونات</p>
+                <p>2. تأكد من عدم وجود تضارب في CSS</p>
+                <p>3. جرب إعادة تشغيل خادم التطوير</p>
+                <p>4. تحقق من أن جميع التبعيات محدثة</p>
+                <p>5. راجع رسائل الخطأ في الكونسول بعناية</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

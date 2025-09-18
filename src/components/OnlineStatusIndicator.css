@@ -1,0 +1,113 @@
+/* تأثيرات النقطة الخضراء للمستخدمين النشطين */
+/* Online Status Indicator Animations */
+
+.online-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.online-indicator-inner {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  border-radius: 50%;
+  animation: pulse-green 2s infinite;
+}
+
+/* تأثير النبض الأخضر */
+@keyframes pulse-green {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* تأثير الوهج الأخضر */
+.online-indicator::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: glow-green 3s infinite;
+  z-index: -1;
+}
+
+@keyframes glow-green {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* أحجام مختلفة للنقطة */
+.online-indicator-sm {
+  width: 12px;
+  height: 12px;
+}
+
+.online-indicator-sm .online-indicator-inner {
+  width: 6px;
+  height: 6px;
+}
+
+.online-indicator-md {
+  width: 16px;
+  height: 16px;
+}
+
+.online-indicator-md .online-indicator-inner {
+  width: 8px;
+  height: 8px;
+}
+
+.online-indicator-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.online-indicator-lg .online-indicator-inner {
+  width: 10px;
+  height: 10px;
+}
+
+/* تأثير hover للتفاعل */
+.online-indicator:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.online-indicator:hover::before {
+  opacity: 0.8;
+}
+
+/* تأثير للوضع المظلم */
+@media (prefers-color-scheme: dark) {
+  .online-indicator {
+    border-color: #1f2937;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}

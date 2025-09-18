@@ -1,0 +1,3208 @@
+{
+    "common": {
+        "welcome": "Welcome",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "search": "Search",
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete",
+        "confirm": "Confirm",
+        "loading": "Loading...",
+        "deleting": "Deleting...",
+        "error": "An error occurred",
+        "success": "Success",
+        "warning": "Warning",
+        "actionCannotBeUndone": "This action cannot be undone",
+        "deleteWarningMessage": "This item will be permanently deleted and cannot be recovered.",
+        "required": "This field is required",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "age": "Age",
+        "location": "Location",
+        "submit": "Submit",
+        "backToHome": "Back to Home",
+        "dir": "ltr",
+        "minutes": "minutes",
+        "hours": "hours",
+        "unknown": "Unknown",
+        "now": "Now",
+        "minutesAgo": "{{count}} minutes ago",
+    "pageTitles": {
+        "home": "Rezge - Islamic Marriage Website",
+        "search": "Advanced Search - Rezge",
+        "profile": "Profile - Rezge",
+        "messages": "Messages - Rezge",
+        "likes": "Likes - Rezge",
+        "notifications": "Notifications - Rezge",
+        "settings": "Settings - Rezge",
+        "features": "Features - Rezge",
+        "about": "About Us - Rezge",
+        "contact": "Contact Us - Rezge",
+        "helpCenter": "Help Center - Rezge",
+        "faq": "FAQ - Rezge",
+        "islamicGuidelines": "Islamic Guidelines - Rezge",
+        "privacyPolicy": "Privacy Policy - Rezge",
+        "termsOfService": "Terms of Service - Rezge",
+        "articles": "Articles - Rezge",
+        "login": "Login - Rezge",
+        "register": "Register - Rezge",
+        "forgotPassword": "Forgot Password - Rezge",
+        "resetPassword": "Reset Password - Rezge",
+        "admin": {
+            "dashboard": "Dashboard - Rezge Admin",
+            "users": "User Management - Rezge Admin",
+            "admins": "Admin Management - Rezge Admin",
+            "reports": "Reports - Rezge Admin",
+            "settings": "System Settings - Rezge Admin",
+            "analytics": "Analytics - Rezge Admin",
+            "content": "Content Management - Rezge Admin",
+            "verification": "Verification Requests - Rezge Admin"
+        }
+    },
+        "hoursAgo": "{{count}} hours ago",
+        "daysAgo": "{{count}} days ago"
+    },
+    "navigation": {
+        "home": "Home",
+        "search": "Search",
+        "messages": "Messages",
+        "profile": "Profile",
+        "settings": "Settings",
+        "help": "Help",
+        "features": "Features",
+        "about": "About Us",
+        "articles": "Articles",
+        "contact": "Contact Us",
+        "helpCenter": "Help Center",
+        "faq": "FAQ",
+        "islamicGuidelines": "Islamic Guidelines",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "security": "Security & Privacy",
+        "subscription": "Subscriptions",
+        "plans": "Plans",
+        "logout": "Logout",
+        "userMenu": "User Menu",
+        "login": "Login",
+        "register": "Sign Up",
+        "verified": "Verified",
+        "underReview": "Under Review",
+        "openMenu": "Open Menu",
+        "dashboard": "Dashboard",
+        "matches": "Matches",
+        "likes": "Likes",
+        "subscription": "Subscriptions"
+    },
+    "profileImage": {
+        "profilePicture": "Profile Picture",
+        "uploadImage": "Upload Profile Picture",
+        "changeImage": "Change Image",
+        "deleteImage": "Delete Image",
+        "showImage": "Show Image",
+        "hideImage": "Hide Image",
+        "uploadSuccess": "Image uploaded successfully",
+        "uploadError": "Failed to upload image",
+        "deleteSuccess": "Image deleted successfully",
+        "deleteError": "Failed to delete image",
+        "visibilityEnabled": "Image visibility enabled",
+        "visibilityDisabled": "Image visibility disabled",
+        "visibilityError": "Failed to update privacy settings",
+        "supportedFormats": "Supported formats: JPEG, PNG, WebP",
+        "maxSize": "Maximum size: 5MB"
+    },
+    "shareProfile": {
+        "shareButton": "Share Profile",
+        "modalTitle": "Share My Profile",
+        "profileLink": "Profile Link",
+        "shareVia": "Share via:",
+        "nativeShare": "Share",
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "copyLink": "Copy Link",
+        "copied": "Copied!",
+        "copySuccess": "Link Copied",
+        "copySuccessDesc": "Your profile link has been copied successfully",
+        "copyError": "Copy Failed",
+        "copyErrorDesc": "An error occurred while copying the link",
+        "whatsappMessage": "Hello! You can view my profile on Rizqi website:",
+        "emailSubject": "{{name}}'s Profile on Rizqi",
+        "emailBody": "Hello!\n\nYou can view my profile on Rizqi Islamic matrimonial website:",
+        "shareTitle": "{{name}}'s Profile",
+        "shareText": "View {{name}}'s profile on Rizqi",
+        "privacyNote": "Anyone with this link will be able to view your public profile only"
+    },
+    "publicProfile": {
+        "notFound": "Profile Not Found",
+        "notFoundDesc": "The requested profile was not found or is not available for viewing",
+        "privacyNotice": "Privacy Notice",
+        "privacyNoticeDesc": "This public profile shows basic information only according to privacy settings",
+        "showInterest": "Show Interest",
+        "sendLike": "Send Like",
+        "likeSent": "Like Sent",
+        "sendMessage": "Send Message",
+        "memberSince": "Member since",
+        "error": {
+            "notFound": "Profile not found",
+            "doesNotExist": "This profile is not available",
+            "loadingError": "An error occurred while loading the profile",
+            "unavailable": "Profile Unavailable",
+            "profilePrivate": "This profile is private and cannot be viewed publicly",
+            "authRequired": "You must be logged in to view profiles",
+            "verificationRequired": "This profile is only available to verified members",
+            "invalidStatus": "Your account is inactive or invalid",
+            "sameGenderNotAllowed": "Access to profiles of the same gender is not allowed for Islamic guidelines"
+        }
+    },
+    "header": {
+        "brand": {
+            "name": "Rezge"
+        }
+    },
+    "auth": {
+        "loginTitle": "Login",
+        "registerTitle": "Create New Account",
+        "forgotPassword": "Forgot Password?",
+        "rememberMe": "Remember Me",
+        "alreadyHaveAccount": "Already have an account?",
+        "dontHaveAccount": "Don't have an account?",
+        "login": {
+            "title": "Login",
+            "subtitle": "Welcome back to Rezge",
+            "email": "Email",
+            "password": "Password",
+            "emailPlaceholder": "example@email.com",
+            "passwordPlaceholder": "Enter your password",
+            "rememberMe": "Remember me",
+            "forgotPassword": "Forgot password?",
+            "loginButton": "Login",
+            "loginButtonLoading": "Logging in...",
+            "loginBlocked": "Login temporarily blocked",
+            "attemptsRemaining": "Attempts remaining: {{count}}",
+            "noAccount": "Don't have an account?",
+            "createAccount": "Create new account",
+            "orDivider": "or",
+            "googleLogin": "Login with Google",
+            "facebookLogin": "Login with Facebook",
+            "backToHome": "Back to homepage",
+            "secure": "Secure",
+            "verified": "Verified",
+            "dataProtection": {
+                "title": "Data Protection",
+                "description": "All your data is protected with SSL encryption and adheres to the highest security and privacy standards"
+            },
+            "validation": {
+                "emailInvalid": "Invalid email address",
+                "passwordRequired": "Password is required",
+                "emailRequired": "Please enter your email first"
+            },
+            "messages": {
+                "loginSuccess": "Login successful!",
+                "loginError": "Invalid email or password",
+                "unexpectedError": "An unexpected error occurred. Please try again",
+                "resetPasswordSent": "Password reset link has been sent to your email",
+                "resetPasswordError": "An error occurred while sending the reset link",
+                "invalidCredentials": "Invalid email or password",
+                "userNotFound": "User not found",
+                "emailNotConfirmed": "Please confirm your email first",
+                "accountDisabled": "Account is disabled, please contact support",
+                "tooManyAttempts": "Too many attempts, please try again later",
+                "networkError": "Network error, please check your internet connection",
+                "serverError": "Server error, please try again later",
+                "sessionExpired": "Session expired, please login again",
+                "accessDenied": "Access denied",
+                "invalidToken": "Invalid or expired verification token"
+            }
+        },
+        "twoFactor": {
+            "title": "Two-Factor Authentication",
+            "loginTitle": "Identity Verification",
+            "enableTitle": "Enable Two-Factor Authentication",
+            "disableTitle": "Disable Two-Factor Authentication",
+            "description": "Enter the verification code sent to your email",
+            "enableDescription": "Enter the verification code to enable two-factor authentication",
+            "disableDescription": "Enter the verification code to disable two-factor authentication",
+            "codeSentTo": "Code sent to:",
+            "enterCode": "Enter verification code",
+            "codeLength": "Please enter the complete verification code",
+            "verifyButton": "Verify Code",
+            "verifyingButton": "Verifying...",
+            "resendCode": "Resend Code",
+            "resendingButton": "Sending...",
+            "canResendIn": "You can resend in",
+            "seconds": "seconds",
+            "minutes": "minutes",
+            "hours": "hours",
+            "successMessage": "Verification successful! Redirecting...",
+            "enabledSuccess": "Two-factor authentication enabled successfully",
+            "disabledSuccess": "Two-factor authentication disabled successfully",
+            "invalidCode": "Invalid verification code",
+            "expiredCode": "Verification code has expired",
+            "tooManyAttempts": "Too many attempts. Please try again later",
+            "unexpectedError": "An unexpected error occurred. Please try again.",
+            "backToLogin": "Back to Login",
+            "backToSecurity": "Back to Security Settings",
+            "didntReceiveCode": "Didn't receive the code?",
+            "newCodeSent": "New code sent to your email"
+        },
+
+        "resetPassword": {
+            "title": "Reset Password",
+            "description": "Enter your new password for your account",
+            "password": "New Password",
+            "confirmPassword": "Confirm Password",
+            "passwordPlaceholder": "Enter your new password",
+            "confirmPasswordPlaceholder": "Re-enter your password",
+            "updateButton": "Update Password",
+            "updatingButton": "Updating...",
+            "backToLogin": "Back to Login",
+            "validation": {
+                "passwordMinLength": "Password must be at least 8 characters long",
+                "passwordComplexity": "Password must contain uppercase, lowercase and number",
+                "passwordsNotMatch": "Passwords do not match"
+            },
+            "messages": {
+                "success": "Password updated successfully!",
+                "successDescription": "You will be redirected to the login page...",
+                "invalidSession": "Password reset link is invalid or expired",
+                "updateError": "Failed to update password. Please try again.",
+                "unexpectedError": "An unexpected error occurred. Please try again.",
+                "checkingSession": "Checking link validity...",
+                "invalidLink": "Invalid Link",
+                "requestNewLink": "Request New Link"
+            }
+        },
+
+        "createAccount": "Create Account",
+        "confirmPassword": "Confirm Password",
+        "forgotPassword": {
+            "title": "Forgot Password",
+            "subtitle": "Enter your email to receive a temporary password",
+            "description": "We'll send you a temporary password that you can use to set a new password for your account.",
+            "email": "Email Address",
+            "emailPlaceholder": "Enter your email address",
+            "sendButton": "Send Temporary Password",
+            "sendingButton": "Sending...",
+            "backToLogin": "Back to Login",
+            "validation": {
+                "emailRequired": "Please enter your email address",
+                "emailInvalid": "Please enter a valid email address"
+            },
+            "messages": {
+                "success": "Temporary password sent successfully!",
+                "successDescription": "A temporary password has been sent to your email. It will expire in 60 minutes.",
+                "useNowLink": "Use temporary password now",
+                "emailSendError": "Temporary password was created but failed to send email. Please try again.",
+                "rateLimitError": "Too many requests. Please wait before trying again.",
+                "unexpectedError": "An unexpected error occurred. Please try again later.",
+                "blockedMessage": "Too many failed attempts. Please try again later.",
+                "createPasswordError": "An error occurred while creating temporary password",
+                "warning": "Warning"
+            }
+        },
+        "temporaryPassword": {
+            "title": "Set New Password",
+            "subtitle": "Use your temporary password to set a new password",
+            "description": "Enter the temporary password you received via email and create a new secure password.",
+            "email": "Email Address",
+            "emailPlaceholder": "Enter your email address",
+            "temporaryPassword": "Temporary Password",
+            "temporaryPasswordPlaceholder": "Enter the temporary password from email",
+            "newPassword": "New Password",
+            "newPasswordPlaceholder": "Enter your new password",
+            "confirmPassword": "Confirm New Password",
+            "confirmPasswordPlaceholder": "Confirm your new password",
+            "updateButton": "Update Password",
+            "updatingButton": "Updating...",
+            "backToLogin": "Back to Login",
+            "validation": {
+                "emailRequired": "Please enter your email address",
+                "emailInvalid": "Please enter a valid email address",
+                "temporaryPasswordRequired": "Please enter the temporary password",
+                "newPasswordRequired": "Please enter a new password",
+                "newPasswordMinLength": "Password must be at least 8 characters",
+                "newPasswordPattern": "Password must contain uppercase, lowercase letters and numbers",
+                "confirmPasswordRequired": "Please confirm your new password",
+                "passwordsNotMatch": "Passwords do not match"
+            },
+            "messages": {
+                "success": "Password updated successfully! Logging in...",
+                "updateError": "Failed to update password",
+                "loginError": "Password updated but login failed. Please login manually.",
+                "loginErrorRedirect": "Password updated. Please login manually.",
+                "invalidTempPassword": "Invalid or expired temporary password",
+                "unexpectedError": "An unexpected error occurred. Please try again."
+            },
+            "passwordStrength": {
+                "weak": "Weak",
+                "fair": "Fair",
+                "good": "Good",
+                "strong": "Strong"
+            }
+        },
+        "register": {
+            "title": "Create New Account",
+            "subtitle": "Join thousands of Muslims seeking Islamic marriage",
+            "personalInfo": "Personal Information",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "phone": "Phone Number",
+            "age": "Age",
+            "city": "City",
+            "gender": "Gender",
+            "maritalStatus": "Marital Status",
+            "firstNamePlaceholder": "Enter your first name",
+            "lastNamePlaceholder": "Enter your last name",
+            "emailPlaceholder": "example@email.com",
+            "phonePlaceholder": "Phone Number",
+            "agePlaceholder": "25",
+            "cityPlaceholder": "Riyadh",
+            "genderOptions": {
+                "placeholder": "Select Gender",
+                "male": "Male",
+                "female": "Female"
+            },
+            "maritalStatusOptions": {
+                "placeholder": "Select Marital Status",
+                "single": "Single",
+                "divorced": "Divorced",
+                "widowed": "Widowed"
+            },
+            "terms": {
+                "acceptTerms": "I agree to the",
+                "termsLink": "Terms and Conditions",
+                "termsText": "of the website and commitment to Islamic guidelines",
+                "acceptPrivacy": "I agree to the",
+                "privacyLink": "Privacy Policy",
+                "privacyText": "and personal data protection"
+            },
+            "submitButton": "Confirm Account",
+            "submitButtonLoading": "Sending verification link...",
+            "alreadyHaveAccount": "Already have an account?",
+            "loginLink": "Login",
+            "features": {
+                "secure": "Safe & Secure",
+                "verified": "Islamically Verified",
+                "free": "Free to Start"
+            },
+            "verification": {
+                "showStats": "Show verification statistics",
+                "hideStats": "Hide verification statistics"
+            },
+            "validation": {
+                "firstNameMin": "First name must be at least 2 characters",
+                "lastNameMin": "Last name must be at least 2 characters",
+                "emailInvalid": "Invalid email address",
+                "ageMin": "Age must be at least 18 years",
+                "ageMax": "Age must be less than 80 years",
+                "genderRequired": "Please select gender",
+                "cityMin": "Please enter city",
+                "maritalStatusRequired": "Please select marital status",
+                "acceptTermsRequired": "You must agree to the terms and conditions",
+                "acceptPrivacyRequired": "You must agree to the privacy policy",
+                "phoneRequired": "Please enter phone number",
+                "phoneInvalid": "Please enter a valid phone number",
+                "nationalityRequired": "Nationality is required",
+                "professionRequired": "Profession is required",
+                "bioRequired": "About yourself is required (at least 10 characters)",
+                "bioMax": "About yourself must not exceed 500 characters",
+                "formErrors": "Please check all required fields"
+            },
+            "messages": {
+                "verificationSent": "Verification link sent to",
+                "linkValid": "Link is valid for 24 hours",
+                "dailyLimitReached": "Daily limit reached",
+                "consecutiveLimitReached": "Consecutive attempts limit reached",
+                "nextAttemptTime": "You can try again at:",
+                "waitTime": "You can request a new link after",
+                "minutes": "minutes",
+                "attempts": "attempts",
+                "dailyAttempts": "attempts today",
+                "consecutiveAttempts": "consecutive attempts",
+                "statistics": "Statistics:",
+                "tip": "Tip: Open Developer Tools (F12) and copy the verification link from the Console tab to continue immediately.",
+                "verificationError": "An error occurred while sending the verification link",
+                "unexpectedError": "An unexpected error occurred. Please try again",
+                "verificationEmailSent": "Verification link has been sent to your email successfully",
+                "checkEmailAndLogin": "Please check your email and click the verification link, then return to log in",
+                "emailSendError": "Failed to send email"
+            },
+            "requiredInfoTitle": "Required Additional Information",
+            "requiredInfoSubtitle": "This information is required to complete your profile and ensure it appears in search results",
+            "optionalInfoTitle": "Optional Additional Information",
+            "optionalInfoSubtitle": "You can fill this information later from your profile page",
+            "bio": "About Yourself",
+            "bioPlaceholder": "Write a brief description about yourself and your personality...",
+            "education": "Education",
+            "educationPlaceholder": "e.g., Bachelor of Engineering",
+            "profession": "Profession",
+            "professionPlaceholder": "e.g., Software Engineer",
+            "religiousCommitment": "Religious Commitment Level",
+            "religiousCommitmentPlaceholder": "Select commitment level",
+            "religiousCommitmentCommitted": "Committed",
+            "religiousCommitmentConservative": "Conservative",
+            "religiousCommitmentPreferNotSay": "Prefer not to say",
+            "nationality": "Nationality",
+            "nationalityPlaceholder": "Select nationality",
+            "height": "Height (cm)",
+            "heightPlaceholder": "e.g., 170",
+            "weight": "Weight (kg)",
+            "weightPlaceholder": "e.g., 70",
+            "educationLevel": "Education Level",
+            "educationLevelPlaceholder": "Select education level",
+            "educationLevelPrimary": "Primary",
+            "educationLevelSecondary": "Secondary",
+            "educationLevelDiploma": "Diploma",
+            "educationLevelBachelor": "Bachelor's",
+            "educationLevelMaster": "Master's",
+            "educationLevelDoctorate": "Doctorate",
+            "prayerCommitment": "Prayer Commitment",
+            "prayerCommitmentPlaceholder": "Select prayer commitment level",
+            "prayerCommitmentDontPray": "Don't pray",
+            "prayerCommitmentPrayAll": "Pray all obligatory prayers",
+            "prayerCommitmentPraySometimes": "Pray sometimes",
+            "prayerCommitmentPreferNotSay": "Prefer not to say",
+            "smoking": "Smoking",
+            "smokingYes": "Yes",
+            "smokingNo": "No",
+            "beard": "Beard (for men)",
+            "beardPlaceholder": "Select beard status",
+            "beardYes": "Yes",
+            "beardNo": "No",
+            "hijab": "Hijab (for women)",
+            "hijabPlaceholder": "Select hijab status",
+            "hijabNoHijab": "No hijab",
+            "hijabHijab": "Hijab",
+            "hijabNiqab": "Niqab",
+            "hijabPreferNotSay": "Prefer not to say",
+            "personalReligiousInfoTitle": "Personal & Religious Information",
+            "religiosityLevel": "Religiosity Level",
+            "religiosityLevelPlaceholder": "Select religiosity level",
+            "religiosityLevelNotReligious": "Not Religious",
+            "religiosityLevelSomewhatReligious": "Somewhat Religious",
+            "religiosityLevelReligious": "Religious",
+            "financialStatus": "Financial Status",
+            "financialStatusPlaceholder": "Select financial status",
+            "financialStatusPoor": "Poor",
+            "financialStatusBelowAverage": "Below Average",
+            "financialStatusAverage": "Average",
+            "financialStatusAboveAverage": "Above Average",
+            "financialStatusWealthy": "Wealthy",
+            "genderSpecificInfoTitle": "Gender-Specific Information"
+        }
+    },
+    "profile": {
+        "title": "Enhanced Profile",
+        "subtitle": "Manage your personal information and preferences in detail",
+        "loading": {
+            "title": "Loading Profile",
+            "subtitle": "Please wait while we load your personal data..."
+        },
+        "personalInfo": "Personal Information",
+        "religiousInfo": "Religious Information",
+        "preferences": "Preferences",
+        "photos": "Photos",
+        "education": "Education",
+        "occupation": "Occupation",
+        "membershipNumber": "Membership Number",
+        "notSpecified": "Not specified",
+        "professionNotSpecified": "Profession not specified",
+        "cityNotSpecified": "City not specified",
+        "years": "years",
+        "user": "User",
+        "edit": "Edit",
+        "cancel": "Cancel",
+        "save": "Save Changes",
+        "fixData": "Fix",
+        "fixDataTitle": "Fix missing data",
+        "errorDuringFix": "❌ An error occurred during the fix",
+        "choose": "Choose...",
+
+        "maritalStatusSection": {
+            "title": "Marital Status",
+            "marriageType": "Marriage Type",
+            "maritalStatus": "Marital Status",
+            "age": "Age",
+            "childrenCount": "Number of Children",
+            "marriageTypeOptions": {
+                "male": {
+                    "firstWife": "First Wife",
+                    "secondWife": "Second Wife"
+                },
+                "female": {
+                    "onlyWife": "Only Wife",
+                    "noObjectionPolygamy": "No objection to polygamy"
+                }
+            },
+            "maritalStatusOptions": {
+                "male": {
+                    "single": "Single",
+                    "married": "Married",
+                    "divorced": "Divorced",
+                    "widowed": "Widowed"
+                },
+                "female": {
+                    "unmarried": "Unmarried",
+                    "divorcedFemale": "Divorced",
+                    "widowedFemale": "Widowed"
+                }
+            }
+        },
+
+        "nationalitySection": {
+            "title": "Nationality and Residence",
+            "residenceLocation": "Place of Residence (Country)",
+            "nationality": "Nationality",
+            "city": "City",
+            "cityPlaceholder": "Current city"
+        },
+
+        "specificationsSection": {
+            "title": "Specifications",
+            "weight": "Weight (kg)",
+            "height": "Height (cm)",
+            "skinColor": "Skin Color",
+            "bodyType": "Body Type",
+            "skinColorOptions": {
+                "veryFair": "Very Fair",
+                "fair": "Fair",
+                "medium": "Medium",
+                "olive": "Olive",
+                "dark": "Dark"
+            },
+            "bodyTypeOptions": {
+                "slim": "Slim",
+                "average": "Average Build",
+                "athletic": "Athletic",
+                "heavy": "Heavy Build"
+            }
+        },
+
+        "religiousSection": {
+            "title": "Religious Commitment",
+            "religiosity": "Religiosity",
+            "prayer": "Prayer",
+            "smoking": "Smoking",
+            "beard": "Beard",
+            "hijab": "Hijab",
+            "religiosityOptions": {
+                "notReligious": "Not Religious",
+                "somewhatReligious": "Somewhat Religious",
+                "religious": "Religious"
+            },
+            "prayerOptions": {
+                "dontPray": "Don't pray",
+                "prayAll": "Pray all obligatory prayers",
+                "praySometimes": "Pray sometimes",
+                "preferNotSay": "Prefer not to say"
+            },
+            "smokingOptions": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "beardOptions": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "hijabOptions": {
+                "noHijab": "No hijab",
+                "hijab": "Hijab",
+                "niqab": "Niqab",
+                "preferNotSay": "Prefer not to say"
+            }
+        },
+
+        "educationWorkSection": {
+            "title": "Education and Work",
+            "educationLevel": "Education Level",
+            "financialStatus": "Financial Status",
+            "workField": "Work Field",
+            "jobTitle": "Job Title",
+            "workFieldPlaceholder": "e.g., Information Technology, Medicine, Education",
+            "jobTitlePlaceholder": "e.g., Software Developer, Doctor, Teacher",
+            "educationLevelOptions": {
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "diploma": "Diploma",
+                "bachelor": "Bachelor's",
+                "master": "Master's",
+                "phd": "PhD"
+            },
+            "financialStatusOptions": {
+                "poor": "Poor",
+                "belowAverage": "Below Average",
+                "average": "Average",
+                "aboveAverage": "Above Average",
+                "wealthy": "Wealthy"
+            }
+        },
+
+        "incomeHealthSection": {
+            "title": "Monthly Income and Health Status",
+            "monthlyIncome": "Monthly Income",
+            "healthStatus": "Health Status",
+            "monthlyIncomeOptions": {
+                "less3000": "Less than 3000 SAR",
+                "3000to5000": "3000 - 5000 SAR",
+                "5000to8000": "5000 - 8000 SAR",
+                "8000to12000": "8000 - 12000 SAR",
+                "12000to20000": "12000 - 20000 SAR",
+                "more20000": "More than 20000 SAR",
+                "preferNotSay": "Prefer not to say"
+            },
+            "healthStatusOptions": {
+                "excellent": "Excellent",
+                "veryGood": "Very Good",
+                "good": "Good",
+                "fair": "Fair",
+                "poor": "Poor",
+                "preferNotSay": "Prefer not to say"
+            }
+        },
+
+        "bioSection": {
+            "title": "Personal Bio",
+            "aboutYou": "About You",
+            "lookingFor": "What you're looking for in a life partner",
+            "aboutYouPlaceholder": "Write a brief description of your personality and values...",
+            "lookingForPlaceholder": "Write the qualities you're looking for in a life partner..."
+        },
+
+        "validation": {
+            "ageMin": "Age must be at least 18 years",
+            "ageMax": "Age must be less than 80 years",
+            "bioMax": "Personal bio must be less than 500 characters",
+            "lookingForMax": "What you're looking for must be less than 300 characters",
+            "emailInvalid": "Invalid email address"
+        }
+    },
+    "search": {
+        "title": "Advanced Search",
+        "subtitle": "Find your ideal life partner using advanced search filters",
+        "searchTitle": "Search for Life Partner",
+        "completeProfilesOnly": "Only complete profiles are shown to ensure quality results",
+        "basicSearch": "Basic Search",
+        "advancedSearch": "Advanced Search",
+        "filters": {
+            "title": "Search Filters",
+            "age": "Age",
+            "ageRange": "Age Range",
+            "from": "From",
+            "to": "To",
+            "fromPlaceholder": "From",
+            "toPlaceholder": "To",
+            "country": "Country",
+            "city": "City",
+            "cityPlaceholder": "Choose city",
+            "education": "Education",
+            "educationOptions": {
+                "any": "All",
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "diploma": "Diploma",
+                "bachelor": "Bachelor's",
+                "master": "Master's",
+                "phd": "PhD"
+            },
+            "occupation": "Occupation",
+            "profession": "Profession",
+            "professionPlaceholder": "Profession",
+            "maritalStatus": "Marital Status",
+            "maritalStatusOptions": {
+                "any": "All",
+                "single": "Single",
+                "divorced": "Divorced",
+                "widowed": "Widowed"
+            },
+            "religiousCommitment": "Religious Commitment Level",
+            "religiousCommitmentOptions": {
+                "any": "All",
+                "notReligious": "Not Religious",
+                "somewhatReligious": "Somewhat Religious",
+                "religious": "Religious"
+            }
+        },
+        "buttons": {
+            "search": "Search",
+            "searching": "Searching...",
+            "clearFilters": "Clear Filters",
+            "clearFiltersAndSearch": "Clear Filters and Search Again"
+        },
+        "results": {
+            "title": "Search Results",
+            "count": "Search Results ({{count}})",
+            "activeFilters": "Active Filters:",
+            "sortBy": "Sort by:",
+            "sortOptions": {
+                "newest": "Newest",
+                "age": "Age",
+                "rating": "Rating",
+                "lastSeen": "Last Seen"
+            },
+            "noResults": "No Results",
+            "noResultsMessage": "We couldn't find any results matching your search criteria",
+            "yearsOld": "years old",
+            "lastSeen": "Last seen:",
+            "sendMessage": "Send Message",
+            "sendLike": "Send Like",
+            "likeSent": "Like Sent",
+            "removeLike": "Remove Like",
+            "sending": "Sending...",
+            "removing": "Removing...",
+            "checking": "Checking...",
+            "viewProfile": "View Profile",
+            "showing": "Showing",
+            "of": "of",
+            "results": "results",
+            "page": "Page"
+        },
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next"
+        },
+        "messages": {
+            "authenticationCheck": "Checking authentication...",
+            "loginRequired": "Please log in",
+            "loginRequiredMessage": "You must log in to access the search page",
+            "loginButton": "Log In",
+            "loadingProfile": "Loading profile...",
+            "completeProfile": "Please complete your profile",
+            "completeProfileMessage": "You must specify your gender in your profile to access the search page. Please go to your profile page and specify your gender.",
+            "completeProfileTip": "💡 If you specified your gender during registration, try refreshing your profile first",
+            "refreshProfile": "Refresh Profile",
+            "refreshingProfile": "Refreshing...",
+            "completeProfileButton": "Complete Profile",
+            "refreshPage": "Refresh Page",
+            "searchError": "An error occurred while searching. Please try again.",
+            "profileRefreshSuccess": "Profile updated successfully",
+            "profileRefreshError": "Error updating profile",
+            "conversationError": "An error occurred while creating the conversation",
+            "unexpectedError": "An unexpected error occurred"
+        },
+        "validation": {
+            "ageMinRequired": "Minimum age must be at least 18 years",
+            "ageMaxRequired": "Maximum age must be less than 80 years"
+        }
+    },
+    "messages": {
+        "messagesTitle": "Messages",
+        "subtitle": "Communicate with members respectfully and safely",
+        "newMessage": "New Message",
+        "sendMessage": "Send Message",
+        "typeMessage": "Type your message here...",
+        "noMessages": "No messages",
+        "conversation": "Conversation",
+        "conversations": "Conversations",
+        "online": "Online",
+        "offline": "Offline",
+        "lastSeen": "Last seen",
+        "messageGuidelines": "Messaging Guidelines",
+        "respectfulCommunication": "Respectful Communication",
+        "noPersonalInfo": "No Personal Information Sharing",
+        "reportInappropriate": "Report Inappropriate Content",
+        "searchConversations": "Search conversations...",
+        "noConversations": "No conversations",
+        "noConversationsDesc": "Start a new conversation from the search page",
+        "searchMembers": "Search for members",
+        "selectConversation": "Please select a conversation",
+        "selectConversationDesc": "Choose a conversation from the sidebar to start messaging and view messages",
+        "loadingConversations": "Loading conversations...",
+        "loadingMessages": "Loading messages...",
+        "noMessagesYet": "No messages yet",
+        "startConversation": "Start the conversation by sending a message below",
+        "you": "You: ",
+        "minutesAgo": "minutes ago",
+        "hoursAgo": "hours ago",
+        "member": "Website member",
+        "userStatus": {
+            "online": "Active now",
+            "justNow": "Active moments ago",
+            "minutesAgo": "Active {{count}} minute ago",
+            "minutesAgo_plural": "Active {{count}} minutes ago",
+            "hoursAgo": "Active {{count}} hour ago",
+            "hoursAgo_plural": "Active {{count}} hours ago",
+            "daysAgo": "Active {{count}} day ago",
+            "daysAgo_plural": "Active {{count}} days ago",
+            "typing": "Typing now..."
+        },
+        "viewProfile": "View profile",
+        "backToConversations": "Back to conversations",
+        "contentModeration": "All messages are reviewed to ensure compliance with Islamic etiquette",
+        "familyInvolvement": {
+            "title": "Involve Family",
+            "description": "You can invite a family member to participate in this conversation",
+            "emailLabel": "Guardian's email address",
+            "emailPlaceholder": "father@example.com",
+            "guidelines": "Family Involvement Guidelines",
+            "guidelinesDesc": "An invitation will be sent to the guardian to review the conversation according to Islamic guidelines. This helps ensure the courtship proceeds respectfully and appropriately.",
+            "cancel": "Cancel",
+            "sendInvitation": "Send Invitation"
+        },
+        "moreOptions": "More options",
+        "reportUser": "Report User",
+        "blockUser": "Block User",
+        "unblockUser": "Unblock User",
+        "deleteConversation": "Delete Chat",
+        "blockModal": {
+            "title": "Confirm User Block",
+            "message": "Are you sure you want to block {name}?\n\nThis user will be completely blocked.",
+            "confirmButton": "Block User Permanently",
+            "cancelButton": "Cancel"
+        },
+        "unblockModal": {
+            "title": "Confirm User Unblock",
+            "message": "Are you sure you want to unblock {name}?",
+            "confirmButton": "Unblock",
+            "cancelButton": "Keep Blocked"
+        },
+        "reportModal": {
+            "title": "Report User",
+            "message": "Please specify the reason for reporting {name}.\n\nThe report will be reviewed by administration within 24 hours.",
+            "placeholder": "Describe the reason for reporting in detail (at least 10 characters)...",
+            "confirmButton": "Send Report",
+            "cancelButton": "Cancel"
+        },
+        "deleteModal": {
+            "title": "Confirm Conversation Deletion",
+            "message": "The conversation and all messages will be permanently deleted from the system for both parties. This action cannot be undone.",
+            "confirmButton": "Delete Chat",
+            "cancelButton": "Cancel"
+        },
+        "messageStatus": {
+            "sent": "Message sent",
+            "delivered": "Message delivered but not read yet",
+            "read": "Message read",
+            "blocked": "Message not delivered - sender is blocked"
+        },
+        "errors": {
+            "loadingError": "Loading Error",
+            "loadingConversationsError": "An error occurred while loading conversations. Please try again.",
+            "loadingMessagesError": "Cannot load messages for this conversation. Please try again.",
+            "sendingError": "Message sending failed",
+            "sendingErrorDesc": "Cannot send the message at the moment. Please try again.",
+            "unexpectedError": "Unexpected Error",
+            "unexpectedLoadingError": "An unexpected error occurred while loading conversations. Please refresh the page.",
+            "unexpectedMessagesError": "An unexpected error occurred while loading messages. Please try again.",
+            "unexpectedSendingError": "An unexpected error occurred while sending the message. Please try again.",
+            "noActiveConversation": "Error",
+            "noActiveConversationDesc": "No active conversation or user not logged in",
+            "noUserData": "Error",
+            "noUserDataDesc": "Cannot find user data",
+            "familyInviteError": "Family involvement failed",
+            "familyInviteErrorDesc": "An error occurred while involving family. Please try again.",
+            "familyEmailRequired": "Incomplete data",
+            "familyEmailRequiredDesc": "Please enter a valid email address for family",
+            "blockingError": "User blocking failed",
+            "blockingErrorDesc": "An error occurred while blocking the user. Please try again.",
+            "unblockingError": "User unblocking failed",
+            "unblockingErrorDesc": "An error occurred while unblocking the user. Please try again.",
+            "reportingError": "Report sending failed",
+            "reportingErrorDesc": "An error occurred while sending the report. Please try again.",
+            "reportReasonRequired": "Report reason required",
+            "reportReasonRequiredDesc": "You must write a reason for the report",
+            "reportReasonTooShort": "Report reason too short",
+            "reportReasonTooShortDesc": "Must be at least 10 characters",
+            "reportAlreadySubmitted": "Already reported",
+            "reportInvalidData": "Data error",
+            "reportInvalidDataDesc": "The submitted data is incorrect. Please try again.",
+            "reportSelfError": "Operation error",
+            "reportSelfErrorDesc": "You cannot report yourself.",
+            "deleteError": "Deletion failed",
+            "deleteErrorDesc": "An error occurred while deleting the conversation. Please try again.",
+            "messagesDisabled": "Messages disabled",
+            "messagesDisabledDesc": "This user does not allow messages at the moment",
+            "userNotFound": "User not found",
+            "userNotFoundDesc": "The requested user was not found",
+            "conversationSendingError": "Sending Error",
+            "conversationSendingErrorDesc": "An error occurred while sending the message. Please try again.",
+            "conversationUnexpectedError": "Unexpected Error",
+            "unexpectedSendingError": "An unexpected error occurred. Check your internet connection and try again."
+        },
+        "success": {
+            "messageSent": "Sent",
+            "messageSentDesc": "Your message has been sent successfully",
+            "familyInvited": "Family involved",
+            "familyInvitedDesc": "Family invitation sent successfully. They will be notified via email.",
+            "userBlocked": "User blocked successfully",
+            "userBlockedDesc": "{name} has been blocked successfully. They won't be able to send you messages or see your profile. You can unblock them anytime from the same menu.",
+            "userUnblocked": "User unblocked successfully",
+            "userUnblockedDesc": "{name} has been unblocked successfully. You can now communicate again.",
+            "reportSent": "Report sent successfully",
+            "reportSentDesc": "Report sent successfully with ID: {reportId}. The report will be reviewed within 24 hours.",
+            "conversationDeleted": "Deleted",
+            "conversationDeletedDesc": "The conversation and all messages have been permanently deleted from the system.",
+            "conversationStarted": "💬 Conversation Started!",
+            "conversationStartedDesc": "Conversation created successfully. You will be redirected to the messages page."
+        },
+        "info": {
+            "processing": "Processing",
+            "blockingInProgress": "Blocking user, please wait...",
+            "unblockingInProgress": "Unblocking user, please wait...",
+            "reportingInProgress": "Sending report, please wait..."
+        },
+        "warnings": {
+            "reportAlreadyExists": "Already reported",
+            "reportLimitReached": "You have already reported this user within the last 24 hours"
+        }
+    },
+    "likes": {
+        "page": {
+            "title": "Received Likes",
+            "subtitle": "People who liked your profile",
+            "sectionTitle": "Received Likes",
+            "count": "like",
+            "loading": "Loading data...",
+            "noLikes": "No new likes",
+            "noLikesDesc": "When someone likes your profile, they will appear here",
+            "viewProfile": "View Profile",
+            "acceptLike": "Accept Like",
+            "rejectLike": "Reject Like",
+            "accepted": "✓ Accepted",
+            "rejected": "✗ Rejected",
+            "processing": "Processing...",
+            "timeAgo": {
+                "minutes": "minutes ago",
+                "hours": "{{count}} hour ago",
+                "hours_plural": "{{count}} hours ago",
+                "days": "{{count}} day ago",
+                "days_plural": "{{count}} days ago"
+            },
+            "userInfo": {
+                "yearsOld": "years old",
+                "notSpecified": "Not specified",
+                "notAvailable": "Not available",
+                "defaultUser": "User"
+            }
+        },
+        "actions": {
+            "accept": "Accept",
+            "reject": "Reject",
+            "responding": "Responding...",
+            "acceptSuccess": "Accepted successfully!",
+            "rejectSuccess": "Rejected",
+            "responseError": "Error responding to like"
+        },
+        "success": {
+            "likeSent": "✨ Sent!",
+            "likeSentDesc": "Like sent successfully. The user will be notified.",
+            "likeRemoved": "🗑️ Removed!",
+            "likeRemovedDesc": "Like removed successfully.",
+            "mutualMatch": "🎉 Congratulations!",
+            "mutualMatchDesc": "You have a mutual like! You can now start a conversation."
+        },
+        "errors": {
+            "sendingError": "Sending Error",
+            "sendingErrorDesc": "An error occurred while sending the like. Please try again.",
+            "removingError": "Removing Error",
+            "removingErrorDesc": "An error occurred while removing the like. Please try again.",
+            "unexpectedError": "Unexpected Error",
+            "unexpectedErrorDesc": "An unexpected error occurred. Check your internet connection and try again.",
+            "loadingError": "Loading Error",
+            "loadingErrorDesc": "An error occurred while loading likes. Please try again."
+        }
+    },
+    "matches": {
+        "page": {
+            "loading": "Searching for suitable matches...",
+            "noMatches": "No new matches",
+            "noMatchesDesc": "You've reviewed all currently available matches. We'll notify you when new matches appear.",
+            "refreshMatches": "Refresh Matches",
+            "matchCounter": "Match {{current}} of {{total}}",
+            "remaining": "{{count}} remaining",
+            "likeRate": "Like rate: {{rate}}%",
+            "goodChoices": "Good choices! 👍"
+        },
+        "actions": {
+            "like": "Like",
+            "pass": "Pass",
+            "view": "View",
+            "message": "Message",
+            "viewProfile": "View Profile",
+            "nextMatch": "Next Match",
+            "keyboardShortcuts": "⌨️ Shortcuts: Space = Like | ESC = Pass | Enter = View Profile"
+        },
+        "compatibility": {
+            "score": "Compatibility Score",
+            "excellent": "Excellent Match",
+            "good": "Good Match",
+            "average": "Average Match",
+            "poor": "Poor Match",
+            "reasons": "Compatibility Reasons:",
+            "details": "Compatibility Details:",
+            "age": "Age",
+            "education": "Education",
+            "religion": "Religion",
+            "location": "Location",
+            "reasonsExamples": {
+                "ageMatch": "🎯 Perfect age match",
+                "sameCity": "🏠 Same city - easy to meet",
+                "sameEducation": "📚 Same education level",
+                "sameReligion": "🕌 Same religious commitment",
+                "similarInterests": "💼 Shared interests",
+                "compatibleGoals": "🎯 Compatible goals",
+                "educationMatch": "🎓 Matching education level",
+                "closeAge": "🎯 Close age range",
+                "nearbyLocation": "🏠 Nearby location",
+                "sharedValues": "💎 Shared values",
+                "similarBackground": "🌟 Similar background"
+            }
+        },
+        "filters": {
+            "title": "Advanced Search Filters",
+            "age": "Age ({{min}} - {{max}} years)",
+            "ageMin": "Minimum: {{min}}",
+            "ageMax": "Maximum: {{max}}",
+            "minCompatibility": "Minimum Compatibility Score ({{score}}%)",
+            "religiousCommitment": "Religious Commitment",
+            "applyFilters": "Apply Filters",
+            "resetFilters": "Reset Filters",
+            "religiousLevels": {
+                "very_religious": "Very Religious",
+                "religious": "Religious",
+                "high": "High",
+                "medium": "Medium",
+                "moderate": "Moderate"
+            }
+        },
+        "userInfo": {
+            "yearsOld": "years old",
+            "personalBio": "Personal Bio:",
+            "imageLoadError": "In case of image loading failure, show default icon"
+        },
+        "tips": {
+            "title": "💡 Tips for Best Results",
+            "readProfile": "• Read the profile carefully before making a decision",
+            "payAttention": "• Pay attention to compatibility points and match reasons",
+            "useFilters": "• Use filters to customize search according to your preferences",
+            "beHonest": "• Be honest in your choices to improve match quality"
+        },
+        "success": {
+            "matchesFound": "Matches Found!",
+            "matchesFoundDesc": "We found {{count}} suitable matches for you.",
+            "moreMatchesLoaded": "New Matches Loaded!",
+            "moreMatchesLoadedDesc": "{{count}} new matches have been added",
+            "likeSent": "💖 Like Sent!",
+            "likeSentDesc": "Your like has been sent to {{name}} successfully.",
+            "mutualMatch": "🎉 Mutual Match!",
+            "mutualMatchDesc": "Congratulations! You have a mutual match with {{name}}. You can now start a conversation.",
+            "passed": "Passed",
+            "passedDesc": "{{name}} has been passed. You can find other matches."
+        },
+        "errors": {
+            "loadingError": "Error Loading Matches",
+            "loadingErrorDesc": "An error occurred while searching for matches. Please try again.",
+            "sendingError": "Sending Error",
+            "sendingErrorDesc": "An error occurred while sending the like. Please try again.",
+            "noMatches": "No Matches",
+            "noMatchesDesc": "We couldn't find suitable matches currently. Try adjusting your search settings.",
+            "noMoreMatches": "No More Matches",
+            "noMoreMatchesDesc": "You've reviewed all currently available matches. We'll notify you when new matches appear."
+        },
+        "comments": {
+            "loadMatches": "Load matches when page loads",
+            "keyboardShortcuts": "Support keyboard shortcuts",
+            "spaceForLike": "Space for like",
+            "escapeForPass": "ESC for pass",
+            "enterForProfile": "Enter to view profile",
+            "arrowForNext": "Right arrow for next match",
+            "loadImages": "Load profile images for matches",
+            "getImageUrl": "Get profile image URL",
+            "handleLike": "Handle like action",
+            "sendLike": "Send like via LikesService",
+            "addToLiked": "Add to liked list",
+            "saveMatch": "Save match to database",
+            "noErrorToUser": "Don't show error to user as like was sent successfully",
+            "showSuccess": "Show success message",
+            "handlePass": "Handle pass action",
+            "showConfirmation": "Show confirmation message",
+            "nextMatch": "Move to next match",
+            "reloadMatches": "Reload new matches",
+            "compatibilityColor": "Get compatibility score color",
+            "compatibilityText": "Get compatibility level text",
+            "compatibilityFilter": "Compatibility score filter",
+            "educationFilter": "Education level filter",
+            "religiousFilter": "Religious commitment filter"
+        }
+    },
+    "home": {
+        "welcomeMessage": "Welcome to Rezge Islamic Marriage",
+        "subtitle": "A safe and Sharia-compliant platform to find your life partner",
+        "featuredProfiles": "Featured Profiles",
+        "recentlyJoined": "Recently Joined",
+        "successStories": "Success Stories",
+        "howItWorks": "How It Works",
+        "step1": "Create Your Profile",
+        "step2": "Search for Compatible Partner",
+        "step3": "Communicate Respectfully",
+        "step4": "Begin Your Halal Marriage Journey",
+        "hero": {
+            "title": "Islamic Marriage Website",
+            "subtitle": "First for Muslims",
+            "description": "Find your ideal life partner in a safe and respectful environment that adheres to Islamic values and Sharia guidelines",
+            "stats": {
+                "members": "thousand members",
+                "matches": "million matches",
+                "users": "million users"
+            },
+            "cta": {
+                "register": "Join Now",
+                "learn": "Learn More",
+                "watch": "Watch Video"
+            }
+        },
+        "trustIndicators": {
+            "title": "Why Choose Rezge?",
+            "verified": "Verified and secure platform",
+            "sharia": "Careful on Islamic guidelines",
+            "success": "We successfully connected thousands of couples"
+        },
+        "websitePreview": {
+            "title": "Explore the Website",
+            "subtitle": "Discover all the features that make Rezge the ideal choice for Islamic marriage"
+        },
+        "howItWorksSection": {
+            "title": "How Does the Website Work?",
+            "subtitle": "Simple and easy steps to find your life partner",
+            "steps": {
+                "register": {
+                    "title": "Create Your Profile",
+                    "description": "Sign up and create a comprehensive profile that reflects your personality and Islamic values"
+                },
+                "search": {
+                    "title": "Smart Search",
+                    "description": "Use our advanced search tools to find compatible partners based on your preferences"
+                },
+                "communicate": {
+                    "title": "Safe Communication",
+                    "description": "Start conversations in a monitored and secure environment that adheres to Islamic etiquette"
+                },
+                "marriage": {
+                    "title": "Halal Marriage",
+                    "description": "Begin your marriage journey with family involvement and adherence to Islamic traditions"
+                }
+            }
+        },
+        "successStoriesSection": {
+            "title": "Real Success Stories",
+            "subtitle": "Stories of couples who found their life partners through Rezge",
+            "stats": {
+                "title": "Our Achievements",
+                "marriages": "Successful Marriages",
+                "members": "Active Members",
+                "countries": "Countries",
+                "satisfaction": "Satisfaction Rate",
+                "experience": "Years of Experience"
+            },
+            "stories": {
+                "story1": {
+                    "text": "Thanks to Rezge, I found my life partner in a safe and respectful environment. The website helped us communicate according to Islamic guidelines.",
+                    "author": "Ahmed and Fatima",
+                    "status": "Married for 2 years"
+                },
+                "story2": {
+                    "text": "The search experience was excellent and the results were accurate. We were able to involve our families from the beginning.",
+                    "author": "Omar and Aisha",
+                    "status": "Married for 1 year"
+                },
+                "story3": {
+                    "text": "A wonderful platform that respects Islamic values. We felt safe and comfortable throughout the process.",
+                    "author": "Khalid and Maryam",
+                    "status": "Married for 3 years"
+                },
+                "story4": {
+                    "text": "Exceptional experience! The website provides a safe and respectful environment for meeting. We are very happy with our marriage and thank the Rezge team for this excellent service.",
+                    "author": "Sarah and Laith",
+                    "status": "Married for 3 months"
+                },
+                "story5": {
+                    "text": "Alhamdulillah, I found my suitable life partner through Rezge. The website respects Islamic values and provides a safe environment for halal courtship.",
+                    "author": "Mohammed and Yusra",
+                    "status": "Married for 2 months"
+                }
+            }
+        },
+        "featuresSection": {
+            "title": "What Makes Our Website Special?",
+            "subtitle": "Discover the features that make Rezge the first choice for Muslims seeking marriage",
+            "features": {
+                "detailedProfile": {
+                    "title": "Detailed Profile",
+                    "description": "Create a comprehensive profile that reflects your personality and Islamic values with the ability to add precise details about your expectations"
+                },
+                "privacyProtection": {
+                    "title": "Complete Privacy Protection",
+                    "description": "We guarantee the protection of your personal data with the highest security standards including content monitoring and identity verification"
+                },
+                "respectfulCommunication": {
+                    "title": "Respectful Communication",
+                    "description": "Advanced communication system that ensures adherence to Islamic etiquette with the possibility of involving family in conversations"
+                }
+            }
+        },
+        "securitySection": {
+            "title": "Security & Privacy Are Our Priority",
+            "subtitle": "We are committed to the highest security standards to protect your personal data and ensure a safe and respectful experience",
+            "features": {
+                "advancedEncryption": {
+                    "title": "Advanced Encryption",
+                    "description": "All data is protected with SSL 256-bit encryption to ensure maximum security"
+                },
+                "identityVerification": {
+                    "title": "Identity Verification",
+                    "description": "Strict system for verifying user identities to ensure the authenticity of personal profiles"
+                },
+                "contentModeration": {
+                    "title": "Content Moderation",
+                    "description": "Specialized team monitors content around the clock to ensure adherence to Islamic etiquette"
+                },
+                "completePrivacy": {
+                    "title": "Complete Privacy",
+                    "description": "Full control over who can see your profile and your private information"
+                }
+            },
+            "trustBadges": {
+                "shariaCompliant": "Caireful on Sharia guidelines",
+                "iso27001": "ISO 27001",
+                "gdprCompliant": "GDPR Compliant"
+            }
+        },
+        "faqSection": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Answers to the most common questions about Rezge",
+            "questions": {
+                "q1": {
+                    "question": "Is the website free?",
+                    "answer": "Yes, you can create an account and start searching for free. We also offer paid plans with additional features like unlimited messages and advanced search."
+                },
+                "q2": {
+                    "question": "How do you ensure adherence to Islamic values?",
+                    "answer": "We have a specialized team of scholars and Islamic counselors who oversee all aspects of the website. We also continuously monitor content and apply strict guidelines for respectful communication."
+                },
+                "q3": {
+                    "question": "Can families participate in the process?",
+                    "answer": "Absolutely! We encourage family involvement in the courtship process. Parents can create accounts for their children or participate in conversations when needed."
+                },
+                "q4": {
+                    "question": "How do you protect my privacy?",
+                    "answer": "We use the latest encryption technologies to protect your data. You can control who sees your profile, and we don't share your information with any third party without your consent."
+                },
+                "q5": {
+                    "question": "What are the success rates?",
+                    "answer": "More than 2500 successful marriages through Rezge, with a satisfaction rate of up to 98%. We are proud to have helped thousands of people find their suitable life partner."
+                }
+            }
+        },
+        "blogSection": {
+            "title": "Articles & Tips for Islamic Marriage",
+            "subtitle": "Discover the latest articles and tips from marriage experts and Islamic counselors",
+            "articles": {
+                "article1": {
+                    "date": "December 25, 2024",
+                    "author": "Dr. Ahmed Al-Sharif",
+                    "title": "Islamic Courtship Etiquette: A Comprehensive Guide for Those Seeking Marriage",
+                    "excerpt": "Learn about the Sharia guidelines and Islamic etiquette in courtship before marriage and how to choose the right partner...",
+                    "readMore": "Read More →",
+                    "imageAlt": "Article Image"
+                },
+                "article2": {
+                    "date": "December 20, 2024",
+                    "author": "Ms. Fatima Al-Noor",
+                    "title": "The Role of Family in Choosing a Life Partner: Balancing Opinion and Choice",
+                    "excerpt": "How families can help in the process of choosing a life partner while respecting children's wishes and guiding them towards the best choice...",
+                    "readMore": "Read More →",
+                    "imageAlt": "Article Image"
+                },
+                "article3": {
+                    "date": "December 15, 2024",
+                    "author": "Dr. Mohammed Al-Otaibi",
+                    "title": "Digital Security in Marriage Websites: How to Protect Yourself from Scammers",
+                    "excerpt": "Important tips for maintaining your safety and privacy when using online marriage websites and avoiding fraud...",
+                    "readMore": "Read More →",
+                    "imageAlt": "Article Image"
+                }
+            },
+            "viewAllButton": "View All Articles"
+        },
+        "pricingSection": {
+            "title": "Choose the Right Plan for You",
+            "subtitle": "Start for free and discover all available features",
+            "plans": {
+                "free": {
+                    "name": "Free Plan",
+                    "price": "Free",
+                    "period": "/month",
+                    "features": [
+                        "Create personal profile",
+                        "Basic search",
+                        "5 messages per month",
+                        "View basic profiles"
+                    ],
+                    "button": "Start Free"
+                },
+                "premium": {
+                    "name": "Premium Plan",
+                    "price": "$13",
+                    "period": "/month",
+                    "badge": "Most Popular",
+                    "features": [
+                        "All free plan features",
+                        "Unlimited messages",
+                        "Advanced search",
+                        "See who viewed your profile",
+                        "Hide advertisements"
+                    ],
+                    "button": "Choose Premium"
+                },
+                "vip": {
+                    "name": "VIP Plan",
+                    "price": "$26",
+                    "period": "/month",
+                    "features": [
+                        "All premium plan features",
+                        "Priority in results",
+                        "Free marriage consultation",
+                        "Dedicated technical support",
+                        "Premium identity verification"
+                    ],
+                    "button": "Choose VIP"
+                }
+            }
+        },
+        "ctaSection": {
+            "title": "Start Your Journey to Halal Marriage Today",
+            "subtitle": "Join thousands of Muslims who trusted Rezge to find their life partner",
+            "buttons": {
+                "register": "Create Free Account",
+                "learn": "Learn More"
+            },
+            "features": [
+                "Free to start",
+                "Safe & secure",
+                "Careless on Islamic guidelines"
+            ]
+        }
+    },
+    "features": {
+        "title": "Rezge Features",
+        "subtitle": "Discover what makes Rezge the first choice for Muslims seeking halal marriage",
+        "detailedProfile": {
+            "title": "Detailed Profile",
+            "description": "Create a comprehensive profile that reflects your personality and Islamic values with the ability to add precise details about your expectations and what you're looking for in a life partner",
+            "benefits": {
+                "comprehensive": "Add comprehensive personal details",
+                "preferences": "Set preferences and expectations",
+                "religious": "Display religious and cultural information",
+                "updates": "Continuous update capability"
+            }
+        },
+        "smartMatching": {
+            "title": "Smart Matching System",
+            "description": "Advanced algorithm that finds you the right partner based on compatibility in values, interests, and life goals while considering Sharia guidelines",
+            "benefits": {
+                "algorithm": "Smart matching algorithm",
+                "compatibility": "Analyze compatibility in values",
+                "suggestions": "Personalized suggestions",
+                "updates": "Continuous results updates"
+            }
+        },
+        "secureMessaging": {
+            "title": "Secure & Monitored Messaging",
+            "description": "Safe internal messaging system with content monitoring to ensure adherence to Islamic etiquette and the possibility of involving family in conversations",
+            "benefits": {
+                "monitoring": "Automatic content monitoring",
+                "family": "Involve family in conversations",
+                "encryption": "Message encryption",
+                "history": "Save conversation history"
+            }
+        },
+        "privacyProtection": {
+            "title": "Privacy Protection",
+            "description": "Highest levels of security to protect your personal data with advanced encryption and customizable privacy settings according to your needs",
+            "benefits": {
+                "encryption": "Personal data encryption",
+                "settings": "Advanced privacy settings",
+                "access": "Protection from unauthorized access",
+                "backup": "Secure backups"
+            }
+        },
+        "familyInvolvement": {
+            "title": "Family Involvement",
+            "description": "Ability to involve family in the getting-to-know and communication process to ensure adherence to Islamic traditions and obtain family approval",
+            "benefits": {
+                "invitation": "Invite family to participate",
+                "monitoring": "Family monitoring of conversations",
+                "approval": "Family approval for communication",
+                "reports": "Regular reports to family"
+            }
+        },
+        "verifiedProfiles": {
+            "title": "Verified Profiles",
+            "description": "Comprehensive profile verification system that ensures information credibility and reduces fake or misleading attempts",
+            "benefits": {
+                "identity": "Personal identity verification",
+                "verification": "Information verification",
+                "badges": "Verification badges",
+                "fake": "Reduce fake accounts"
+            }
+        },
+        "islamicGuidelines": {
+            "title": "Sharia Guidelines",
+            "description": "All website features are designed according to Islamic Sharia guidelines with prevention of displaying women's photos and adherence to communication etiquette",
+            "benefits": {
+                "photos": "Prevent displaying women's photos",
+                "communication": "Sharia communication guidelines",
+                "review": "Sharia content review",
+                "guidance": "Islamic guidance"
+            }
+        },
+        "multiLanguage": {
+            "title": "Multi-Language Support",
+            "description": "Interface in Arabic and English with full support for right-to-left (RTL) text direction for Arab users",
+            "benefits": {
+                "interface": "Complete Arabic interface",
+                "rtl": "RTL support",
+                "translation": "Comprehensive translation",
+                "switching": "Easy language switching"
+            }
+        },
+        "mobileOptimized": {
+            "title": "Mobile Optimized",
+            "description": "Responsive design that works smoothly on all devices from smartphones to computers with an optimal user experience",
+            "benefits": {
+                "responsive": "Responsive design",
+                "app": "Mobile app coming soon",
+                "speed": "Fast loading speed",
+                "experience": "Perfect user experience"
+            }
+        },
+        "statistics": {
+            "title": "Numbers Speak for Themselves",
+            "subtitle": "Our achievements in serving the Muslim community",
+            "members": {
+                "number": "10,000+",
+                "label": "registered members"
+            },
+            "marriages": {
+                "number": "500+",
+                "label": "successful marriages"
+            },
+            "satisfaction": {
+                "number": "99%",
+                "label": "user satisfaction"
+            },
+            "support": {
+                "number": "24/7",
+                "label": "technical support"
+            }
+        },
+        "security": {
+            "title": "Security & Privacy",
+            "subtitle": "We take your data security and privacy seriously",
+            "encryption": {
+                "title": "Advanced Encryption",
+                "description": "All your data is protected with advanced AES-256 encryption"
+            },
+            "monitoring": {
+                "title": "Content Monitoring",
+                "description": "Smart system for content monitoring and ensuring adherence to etiquette"
+            },
+            "quality": {
+                "title": "High Quality",
+                "description": "Strict standards to ensure quality of personal profiles"
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "We are Rezge platform, the leading Islamic website for halal marriage in the Arab world",
+        "vision": {
+            "title": "Our Vision",
+            "description": "To be the world's leading platform for Islamic marriage, connecting the hearts of believers in a legitimate and respectful way"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To facilitate the search for a suitable life partner according to Sharia guidelines, while providing a safe and respectful environment"
+        },
+        "values": {
+            "title": "Our Values",
+            "subtitle": "The values we believe in and work through",
+            "items": [
+                "Adherence to Sharia guidelines in all aspects of service",
+                "Transparency and credibility in dealing with users",
+                "Protection of privacy and personal data",
+                "Promoting Islamic family values",
+                "Continuous development to serve the Muslim community"
+            ]
+        },
+        "team": {
+            "title": "Our Team",
+            "description": "The Rezge team includes a selection of developers, designers, and Sharia consultants who work passionately to develop the best Islamic marriage experience. We are committed to continuous development and listening to the needs of our Muslim community.",
+            "members": {
+                "development": {
+                    "role": "Development Team",
+                    "description": "Specialized developers in modern technologies"
+                },
+                "sharia": {
+                    "role": "Sharia Consultants",
+                    "description": "Scholars and jurists specialized in marriage rulings"
+                },
+                "design": {
+                    "role": "Design Team",
+                    "description": "Creative designers who consider Islamic identity"
+                },
+                "security": {
+                    "role": "Security Team",
+                    "description": "Information security experts to protect your data"
+                }
+            }
+        },
+        "commitment": {
+            "title": "Our Commitment",
+            "description": "We pledge to maintain the highest standards of quality, security, and Sharia compliance in all our services. We also commit to continuous development and responding to the needs and aspirations of our users.",
+            "features": {
+                "quality": {
+                    "title": "High Quality",
+                    "description": "Strict standards in all our services"
+                },
+                "innovation": {
+                    "title": "Continuous Innovation",
+                    "description": "Constant development to improve your experience"
+                },
+                "global": {
+                    "title": "Global Service",
+                    "description": "We serve Muslims around the world"
+                }
+            }
+        },
+        "story": {
+            "title": "Our Story",
+            "description": "The idea of Rezge began from a deep belief in the importance of marriage in Islam and the necessity of providing halal and safe means for getting acquainted. We noticed the urgent need for a platform that combines the ease of modern technology with complete adherence to Sharia guidelines, so Rezge was the fruit of this dream."
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We're here to help you in your journey to find your life partner",
+        "form": {
+            "title": "Send us a message",
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send Message",
+            "sending": "Sending...",
+            "success": "Your message has been sent successfully! We'll get back to you soon",
+            "error": "An error occurred while sending the message. Please try again",
+            "required": "This field is required",
+            "invalidEmail": "Please enter a valid email address",
+            "invalidPhone": "Please enter a valid phone number",
+            "messageMinLength": "Message must be at least 10 characters long",
+            "autoFilled": "Auto-filled from your account",
+            "captcha": "Security Verification"
+        },
+        "info": {
+            "title": "Contact Information",
+            "address": {
+                "title": "Address",
+                "value": "Riyadh, Saudi Arabia"
+            },
+            "phone": {
+                "title": "Phone",
+                "value": "+966582352555",
+                "dir": "ltr"
+            },
+            "email": {
+                "title": "Email",
+                "value": "info@rezge.com"
+            },
+            "hours": {
+                "title": "Business Hours",
+                "value": "Sunday - Thursday: 9:00 AM - 6:00 PM"
+            }
+        },
+        "support": {
+            "title": "Technical Support",
+            "description": "Our technical support team is available to help you with any technical inquiries",
+            "email": "support@rezge.com",
+            "phone": "+966582352555",
+            "phoneDir": "ltr"
+        },
+        "sales": {
+            "title": "Sales & Subscriptions",
+            "description": "For inquiries about premium plans and special subscriptions",
+            "email": "sales@rezge.com",
+            "phone": "+966582352555",
+            "phoneDir": "ltr"
+        },
+        "legal": {
+            "title": "Legal Affairs",
+            "description": "For legal inquiries and official complaints",
+            "email": "legal@rezge.com"
+        },
+        "social": {
+            "title": "Follow us on social media",
+            "description": "Stay updated with the latest news and updates"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "description": "You might find the answer to your question in our FAQ section",
+            "button": "View FAQ"
+        },
+        "departments": {
+            "title": "Specialized Support Departments",
+            "subtitle": "Contact the appropriate department for the best service"
+        },
+        "map": {
+            "title": "Our Location on the Map",
+            "placeholder": "Interactive Map",
+            "location": "Riyadh, Saudi Arabia",
+            "detailedAddress": "Detailed Address",
+            "address": "King Fahd District, Riyadh 12345"
+        },
+        "quickContact": {
+            "title": "Need Immediate Help?",
+            "subtitle": "Our technical support team is available 24/7 to help you with any inquiry",
+            "callButton": "Call Us Now",
+            "emailButton": "Email Us"
+        }
+    },
+    "helpCenter": {
+        "title": "Help Center",
+        "subtitle": "We're here to help you every step of the way in finding your life partner",
+        "searchPlaceholder": "Search in help center...",
+        "categories": {
+            "gettingStarted": {
+                "title": "Getting Started",
+                "description": "Learn how to use the platform and create your profile"
+            },
+            "profile": {
+                "title": "Profile Management",
+                "description": "Manage and improve your profile to attract the right partner"
+            },
+            "safety": {
+                "title": "Digital Safety",
+                "description": "Protect your data and ensure a safe experience from scammers and digital risks"
+            },
+            "islamic": {
+                "title": "Islamic Guidance",
+                "description": "Islamic guidelines for marriage and courtship according to Sharia"
+            },
+            "family": {
+                "title": "Family Guidance",
+                "description": "The role of family in choosing a life partner and balancing guidance with choice"
+            },
+            "marriage": {
+                "title": "Marriage Tips",
+                "description": "Practical and experienced advice for a happy married life and solving marital problems"
+            },
+            "safety": {
+                "title": "Safety & Privacy",
+                "description": "Protect your data and ensure a safe experience"
+            },
+            "islamic": {
+                "title": "Islamic Guidelines",
+                "description": "Islamic guidance for marriage and courtship"
+            }
+        },
+        "popularTopics": {
+            "title": "Popular Topics",
+            "topics": [
+                "How to create an attractive profile",
+                "Islamic communication guidelines",
+                "How to search for the right partner",
+                "Privacy and security protection",
+                "Involving family in the process",
+                "Verifying information accuracy"
+            ]
+        },
+        "quickActions": {
+            "title": "Quick Actions",
+            "contact": "Contact Support",
+            "faq": "FAQ",
+            "guidelines": "Islamic Guidelines",
+            "report": "Report an Issue"
+        },
+        "support": {
+            "title": "Need Additional Help?",
+            "description": "Our support team is available to help you 24/7",
+            "chat": "Live Chat",
+            "email": "Send Email",
+            "phone": "Phone Call"
+        },
+        "categoriesTitle": "Help Categories",
+        "articlesCount": "articles"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Answers to the most common questions about using Rezge",
+        "searchPlaceholder": "Search in FAQ...",
+        "categoriesTitle": "Categories",
+        "noResults": {
+            "title": "No results found",
+            "description": "Try searching with different keywords or select another category"
+        },
+        "categories": {
+            "all": "All Categories",
+            "general": "General",
+            "account": "Account",
+            "profile": "Profile",
+            "matching": "Matching",
+            "communication": "Communication",
+            "safety": "Safety",
+            "islamic": "Islamic Guidelines",
+            "billing": "Billing"
+        },
+        "questions": [{
+                "id": "what-is-rezge",
+                "category": "general",
+                "question": "What is Rezge?",
+                "answer": "Rezge is an Islamic marriage platform that aims to help Muslims find suitable life partners according to Islamic guidelines. We provide a safe and monitored environment for Islamic courtship."
+            },
+            {
+                "id": "how-to-register",
+                "category": "account",
+                "question": "How can I create a new account?",
+                "answer": "You can create a new account by clicking the 'Sign Up' button on the homepage, then filling out the form with required information such as name, email, and password. You'll also need to agree to the Terms and Conditions."
+            },
+            {
+                "id": "forgot-password",
+                "category": "account",
+                "question": "I forgot my password, how can I recover it?",
+                "answer": "You can recover your password by clicking the 'Forgot Password' link on the login page. You'll receive an email with a link to reset your password. Make sure to check your spam folder if you don't see the email."
+            },
+            {
+                "id": "account-deletion",
+                "category": "account",
+                "question": "How can I delete my account?",
+                "answer": "You can delete your account by going to Account Settings and selecting 'Delete Account'. All your data will be permanently deleted within 30 days. You can reverse this decision by logging in again during this period."
+            },
+            {
+                "id": "profile-verification",
+                "category": "profile",
+                "question": "How is profile verification done?",
+                "answer": "We verify profiles by reviewing the provided information and ensuring its accuracy. We may request additional documents for identity verification in some cases. Verified profiles receive a blue verification badge."
+            },
+            {
+                "id": "profile-completion",
+                "category": "profile",
+                "question": "Why should I complete my profile?",
+                "answer": "Completing your profile increases your chances of finding a suitable partner. Complete profiles appear better in search results and get more views. Complete information also helps with our smart matching algorithm."
+            },
+            {
+                "id": "photo-guidelines",
+                "category": "profile",
+                "question": "What are the photo guidelines for profiles?",
+                "answer": "According to Islamic guidelines, women's photos are not displayed. Men can add modest and appropriate photos. All photos are reviewed before publication. Inappropriate or non-Islamic photos are prohibited."
+            },
+            {
+                "id": "matching-algorithm",
+                "category": "matching",
+                "question": "How does the matching algorithm work?",
+                "answer": "Our matching algorithm considers multiple factors such as age, education level, location, personal preferences, and shared values. The more detailed your profile, the more accurate the matches will be."
+            },
+            {
+                "id": "search-filters",
+                "category": "matching",
+                "question": "How can I use advanced search filters?",
+                "answer": "You can access advanced search filters from the search page. You can specify age, education level, profession, location, marital status, and other preferences. Save your favorite filters for later use."
+            },
+            {
+                "id": "communication-rules",
+                "category": "communication",
+                "question": "What are the communication rules on the platform?",
+                "answer": "Communication on the platform is monitored to ensure adherence to Islamic etiquette. Inappropriate language or content that violates Islamic principles is prohibited. Family involvement in conversations is possible and encouraged, especially in advanced stages of courtship."
+            },
+            {
+                "id": "message-limits",
+                "category": "communication",
+                "question": "Is there a limit on the number of messages?",
+                "answer": "Free members can send 5 messages per day. Premium members get unlimited messages. You can upgrade your account to get more features and unlimited messaging."
+            },
+            {
+                "id": "family-involvement",
+                "category": "communication",
+                "question": "How can I involve family in conversations?",
+                "answer": "You can invite a family member to join the conversation through the conversation settings. They will receive an email invitation. This feature helps maintain the Islamic nature of courtship."
+            },
+            {
+                "id": "privacy-protection",
+                "category": "safety",
+                "question": "How do you protect my privacy and data?",
+                "answer": "We take privacy protection seriously. All data is encrypted and protected, and we don't share your personal information with third parties. You can control the privacy level of your profile and contact information."
+            },
+            {
+                "id": "report-user",
+                "category": "safety",
+                "question": "How can I report a suspicious user?",
+                "answer": "You can report any user by clicking the 'Report' button on their profile or in the conversation. Our team will review the report within 24 hours and take appropriate action. Your privacy is protected when reporting."
+            },
+            {
+                "id": "block-user",
+                "category": "safety",
+                "question": "How can I block a specific user?",
+                "answer": "You can block any user by going to their profile and clicking 'Block User'. The blocked user won't be able to see your profile or send you messages. You can unblock them at any time."
+            },
+            {
+                "id": "islamic-guidelines",
+                "category": "islamic",
+                "question": "What Islamic guidelines are followed on the platform?",
+                "answer": "We adhere to Islamic guidelines in all aspects of our service, including: preventing display of women's photos, monitoring content and messages, enabling family involvement in conversations, and maintaining Islamic courtship etiquette."
+            },
+            {
+                "id": "islamic-consultation",
+                "category": "islamic",
+                "question": "Can I get Islamic consultation?",
+                "answer": "Yes, we have a team of Islamic consultants specialized in marriage and courtship matters. You can request consultation through the 'Islamic Consultations' section on the website. Consultations are free for all members."
+            },
+            {
+                "id": "subscription-plans",
+                "category": "billing",
+                "question": "What subscription plans are available?",
+                "answer": "We offer a basic free plan and paid plans (monthly, quarterly, annual) with additional features like unlimited messages, advanced search, and ad-free experience. You can compare plans on the 'Subscriptions' page."
+            },
+            {
+                "id": "payment-methods",
+                "category": "billing",
+                "question": "What payment methods are accepted?",
+                "answer": "We accept all major credit cards (Visa, Mastercard, American Express), bank transfers, and digital payment methods like Apple Pay and Google Pay. All transactions are secure and encrypted."
+            },
+            {
+                "id": "refund-policy",
+                "category": "billing",
+                "question": "What is the refund policy?",
+                "answer": "You can request a full refund within 7 days of subscription if you're not satisfied with the service. After this period, partial refunds are possible based on the remaining time. Contact customer service to request a refund."
+            }
+        ],
+        "stillNeedHelp": {
+            "title": "Didn't find an answer to your question?",
+            "description": "Our support team is available to help you",
+            "contactButton": "Contact Us"
+        }
+    },
+    "islamicGuidelines": {
+        "title": "Islamic Guidelines",
+        "subtitle": "Islamic guidance for marriage and courtship according to Islamic teachings",
+        "sections": {
+            "introduction": {
+                "title": "Introduction",
+                "content": "Marriage in Islam is a sunnah of the messengers and a sign of Allah's creation. It is the only legitimate way to form a Muslim family. At Rezge, we adhere to Islamic guidelines in all aspects of our services to ensure a safe environment that complies with Islamic teachings."
+            },
+            "courtship": {
+                "title": "Islamic Courtship Etiquette",
+                "guidelines": [
+                    "Courtship should be for the purpose of marriage, not for entertainment",
+                    "Maintain modesty and dignity in all conversations",
+                    "Avoid prohibited privacy and ensure a mahram is present when meeting",
+                    "Avoid excessive talking or overly personal details",
+                    "Be honest and trustworthy in presenting personal information",
+                    "Respect the other party's wish not to continue"
+                ]
+            },
+            "family": {
+                "title": "Role of Family and Guardians",
+                "content": "Family and guardians play an important role in the courtship and marriage process in Islam. We encourage involving family at appropriate stages of courtship and provide the ability to add them to conversations when needed.",
+                "points": [
+                    "Consult family in choosing the right partner",
+                    "Involve the guardian in advanced stages of courtship",
+                    "Respect family opinions and advice",
+                    "Maintain transparent communication with family about developments"
+                ]
+            },
+            "privacy": {
+                "title": "Privacy and Modesty",
+                "guidelines": [
+                    "No display of women's photos in respect of Islamic guidelines",
+                    "Protect personal information and maintain privacy",
+                    "Do not share conversation details with others",
+                    "Maintain discretion and do not reveal secrets",
+                    "Respect the other party's privacy and information"
+                ]
+            },
+            "communication": {
+                "title": "Communication Guidelines",
+                "rules": [
+                    "Use respectful and appropriate language in all conversations",
+                    "Avoid romantic or overly emotional expressions",
+                    "Do not request sensitive personal information initially",
+                    "Maintain objectivity and seriousness in conversation",
+                    "Avoid controversial or tempting topics"
+                ]
+            },
+            "verification": {
+                "title": "Verification and Credibility",
+                "importance": "Verifying information accuracy is important in Islamic courtship to ensure transparency and honesty.",
+                "steps": [
+                    "Verify identity and basic information",
+                    "Request references and recommendations when needed",
+                    "Confirm marital status and personal circumstances",
+                    "Seek help from trusted people for inquiries and verification"
+                ]
+            }
+        },
+        "reminders": {
+            "title": "Important Reminders",
+            "points": [
+                "Pray and seek guidance (Istikhara) in all stages of courtship",
+                "Be patient and do not rush in making decisions",
+                "Trust in Allah and have confidence in His decree",
+                "Seek Allah's blessing in this important matter"
+            ]
+        },
+        "callToAction": {
+            "title": "Do you have questions about Islamic guidelines?",
+            "description": "Our Islamic guidance team is available to answer your questions",
+            "faqButton": "Frequently Asked Questions",
+            "contactButton": "Contact Us"
+        }
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "subtitle": "We respect your privacy and are committed to protecting your personal data",
+        "lastUpdated": "Last updated",
+        "lastUpdatedDate": "December 2024",
+        "tableOfContents": "Table of Contents",
+        "sections": {
+            "introduction": {
+                "title": "Introduction",
+                "content": "At Rezge, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and protect your data when using our services."
+            },
+            "dataCollection": {
+                "title": "Data We Collect",
+                "intro": "We collect the following types of data:",
+                "types": [
+                    "Personal information: Name, age, email, phone number",
+                    "Profile information: Education, profession, marital status, preferences",
+                    "Usage data: How you interact with the website and services",
+                    "Technical information: IP address, browser type, operating system"
+                ]
+            },
+            "dataUsage": {
+                "title": "How We Use Your Data",
+                "intro": "We use the information we collect from you to provide and improve our services, ensuring a safe and effective experience for all users. Here are the main purposes for using your data:",
+                "purposes": [
+                    "Provide matching services and help find suitable partners",
+                    "Improve user experience and personalize content",
+                    "Communicate with you about services and updates",
+                    "Ensure security and prevent fraud and unauthorized use",
+                    "Comply with legal and regulatory requirements"
+                ]
+            },
+            "dataSharing": {
+                "title": "Data Sharing",
+                "intro": "We do not sell or rent your personal information to third parties. We may share your data in the following cases:",
+                "cases": [
+                    "With trusted service providers who help us operate the website",
+                    "When we have your explicit consent",
+                    "To comply with laws or court orders",
+                    "To protect our rights or user safety"
+                ]
+            },
+            "dataSecurity": {
+                "title": "Data Security",
+                "intro": "We take strict security measures to protect your data:",
+                "measures": [
+                    "Encrypt sensitive data using latest technologies",
+                    "Use secure and protected servers",
+                    "Continuous monitoring for suspicious activities",
+                    "Train staff on security best practices",
+                    "Conduct regular security reviews"
+                ]
+            },
+            "userRights": {
+                "title": "Your Rights",
+                "intro": "You have the following rights regarding your data:",
+                "rights": [
+                    "Access and review your personal data",
+                    "Correct or update incorrect information",
+                    "Delete your account and data (right to be forgotten)",
+                    "Restrict processing of your data under certain circumstances",
+                    "Transfer your data to another service",
+                    "Object to processing your data for marketing purposes"
+                ]
+            },
+            "cookies": {
+                "title": "Cookies",
+                "intro": "We use cookies to improve your experience:",
+                "types": [
+                    "Essential cookies: To operate the website properly",
+                    "Performance cookies: To analyze website usage",
+                    "Functional cookies: To save your preferences",
+                    "Marketing cookies: To display personalized ads"
+                ],
+                "control": "You can control cookies through your browser settings."
+            },
+            "contact": {
+                "title": "Contact Us",
+                "intro": "If you have any questions about this privacy policy, you can contact us:",
+                "email": "privacy@rezge.com",
+                "emailLabel": "Email",
+                "phone": "+966582352555",
+                "phoneLabel": "Phone",
+                "phoneDir": "ltr",
+                "address": "Riyadh, Saudi Arabia",
+                "addressLabel": "Address"
+            }
+        }
+    },
+    "securitySettings": {
+        "title": "Security & Privacy Settings",
+        "subtitle": "Protect your account and control your privacy",
+        "contactInfo": {
+            "title": "Contact Information",
+            "description": "Update your contact information",
+            "email": "Email Address",
+            "emailPlaceholder": "Enter email address",
+            "phone": "Phone Number",
+            "phonePlaceholder": "Enter phone number",
+            "saveButton": "Save Contact Information",
+            "saving": "Saving...",
+            "notAvailable": "Not Available Currently",
+            "checkingLimits": "Checking request limits...",
+            "pendingChangeTitle": "Contact Information Update Request Pending",
+            "pendingChangeDescription": "A confirmation link for updating contact information has been sent to your current email. The request will expire automatically within 4 hours.",
+            "cancelRequest": "Cancel Request"
+        },
+        "passwordChange": {
+            "title": "Change Password",
+            "description": "Update your password to ensure account security",
+            "currentPassword": "Current Password",
+            "currentPasswordPlaceholder": "Enter current password",
+            "newPassword": "New Password",
+            "newPasswordPlaceholder": "Enter new password",
+            "confirmPassword": "Confirm New Password",
+            "confirmPasswordPlaceholder": "Re-enter new password",
+            "updateButton": "Update Password",
+            "updating": "Updating...",
+            "strengthLabel": "Password Strength:",
+            "strengthWeak": "Weak",
+            "strengthFair": "Fair",
+            "strengthGood": "Good",
+            "strengthStrong": "Strong",
+            "strengthVeryStrong": "Very Strong"
+        },
+        "securityPrivacy": {
+            "title": "Security & Privacy Settings",
+            "twoFactor": {
+                "title": "Two-Factor Authentication",
+                "description": "Additional layer of protection for your account"
+            }
+        },
+        "privacySettings": {
+            "title": "Privacy Settings",
+            "contactVisibility": {
+                "title": "Show Contact Information",
+                "phone": "Phone Number",
+                "email": "Email Address"
+            },
+            "profileVisibility": {
+                "title": "Who can see your profile",
+                "members": "Registered Members Only",
+                "verified": "Verified Members Only",
+                "private": "Private - No one can see my profile"
+            },
+            "profileImageVisibility": {
+                "title": "Profile Image Settings",
+                "subtitle": "Control who can see your profile picture",
+                "showImage": "Show Profile Image",
+                "showImageDesc": "Allow verified members to see your picture",
+                "whoCanSee": "Who can see your profile picture:",
+                "verifiedMembers": "Verified Members",
+                "respectsPrivacy": "Respects Privacy",
+                "controlledAccess": "Controlled Access",
+                "importantNote": "Important Note",
+                "noteDescription": "Your profile picture will only be visible to verified members who match your search criteria"
+            },
+            "communication": {
+                "title": "Communication Settings",
+                "allowMessages": "Allow Messages",
+                "familyCanView": "Allow Family to View"
+            }
+        },
+        "notifications": {
+            "title": "Notification Settings",
+            "loginNotifications": "Login Notifications",
+            "messageNotifications": "New Message Notifications"
+        },
+        "securityTips": {
+            "title": "Security Tips",
+            "strongPassword": {
+                "title": "Use a Strong Password",
+                "description": "Choose a password with uppercase, lowercase letters, numbers, and symbols"
+            },
+            "enableTwoFactor": {
+                "title": "Enable Two-Factor Authentication",
+                "description": "Additional layer of protection that protects your account from hacking"
+            },
+            "protectInfo": {
+                "title": "Protect Your Personal Information",
+                "description": "Don't share sensitive information with people you don't know"
+            },
+            "reportSuspicious": {
+                "title": "Report Suspicious Behavior",
+                "description": "Help us maintain community safety by reporting any inappropriate behavior"
+            }
+        },
+        "buttons": {
+            "reset": "Reset",
+            "saveSettings": "Save Settings",
+            "saving": "Saving..."
+        },
+        "messages": {
+            "loginRequired": "You must be logged in to access this page",
+            "loginButton": "Login",
+            "contactUpdateSuccess": "Contact information updated successfully",
+            "passwordUpdateSuccess": "Password updated successfully",
+            "twoFactorEnabled": "Two-factor authentication enabled successfully",
+            "twoFactorDisabled": "Two-factor authentication disabled successfully",
+            "settingsUpdateSuccess": "Security and privacy settings updated successfully!",
+            "errorOccurred": "An error occurred. Please try again.",
+            "invalidCurrentPassword": "Current password is incorrect",
+            "passwordMismatch": "New password and confirmation do not match",
+            "weakPassword": "Password is too weak",
+            "emailInvalid": "Invalid email address",
+            "phoneInvalid": "Invalid phone number",
+            "rateLimitExceeded": "Request limit exceeded. Please try again later.",
+            "twoFactorError": "Failed to enable two-factor authentication",
+            "authRequired": "You must be logged in first",
+            "profileNotLoaded": "User data not loaded yet, please try again",
+            "waitForDataLoad": "Please wait for data loading to complete",
+            "twoFactorEnableError": "Failed to enable two-factor authentication",
+            "twoFactorDisableError": "Failed to disable two-factor authentication",
+            "unexpectedError": "An unexpected error occurred",
+            "passwordUpdateError": "An unexpected error occurred while updating password",
+            "settingsUpdateError": "An unexpected error occurred while updating settings",
+            "contactUpdateError": "An error occurred while updating contact information",
+            "passwordRequired": "Current password is required",
+            "newPasswordRequired": "New password is required",
+            "passwordMinLength": "Password must be at least 8 characters long",
+            "passwordUpdateFailed": "Failed to update password: ",
+            "emailDuplicate": "This email address is already registered to another account",
+            "phoneDuplicate": "This phone number is already registered to another account",
+            "emailCheckError": "Failed to verify email address",
+            "phoneCheckError": "Failed to verify phone number",
+            "emailChangeRequestExists": "A data update request is already pending. Please cancel the request first.",
+            "emailChangeRequestCreateError": "Failed to create update request: ",
+            "emailSendError": "Failed to send email",
+            "emailChangeRequestCancelError": "Failed to cancel email update request",
+            "emailChangeRequestCancelSuccess": "Data update request has been cancelled.",
+            "emailChangeRequestCancelUnexpectedError": "An error occurred while cancelling email update request",
+            "verificationLinkSent": "A verification link has been sent to your current email address.",
+            "noChangesDetected": "No changes were made to contact information.",
+            "dailyLimitReached": "Daily limit reached ({{limit}} updates). You can try again tomorrow.",
+            "rateLimitCheckError": "Error checking request limits: ",
+            "recordRequestError": "Error recording successful request: "
+        }
+    },
+    "captcha": {
+        "title": "Security Verification",
+        "description": "Solve the math problem to continue",
+        "answerPlaceholder": "Enter answer",
+        "verify": "Verify",
+        "refresh": "Refresh",
+        "success": "Successfully verified",
+        "trustedUser": "Trusted user - automatically verified",
+        "trustScore": "Trust score",
+        "successfulAttempts": "Successful attempts",
+        "skipMessage": "Verification skipped - trusted user",
+        "buildingTrust": "Building trust...",
+        "trustLevel": {
+            "low": "Low trust level",
+            "medium": "Medium trust level",
+            "high": "High trust level",
+            "trusted": "Trusted user"
+        },
+        "verifying": "Verifying...",
+        "verified": "Successfully verified",
+        "failed": "Verification failed",
+        "clickToVerify": "Click to verify you're not a robot",
+        "reset": "Reset",
+        "score": "Score",
+        "action": "Action",
+        "hostname": "Hostname",
+        "timestamp": "Timestamp",
+        "showDetails": "Show details",
+        "privacyNotice": "Custom security system to ensure safety",
+        "verificationFailed": "Captcha verification failed",
+        "networkError": "Network error during captcha verification",
+        "required": "Captcha verification required before proceeding",
+        "expired": "Captcha expired, please try again",
+        "invalidToken": "Invalid captcha token",
+        "lowScore": "Low captcha score, please try again",
+        "tooManyAttempts": "Too many attempts, please wait before trying again",
+        "disabled": "Captcha is disabled",
+        "loading": "Loading captcha...",
+        "error": "Error loading captcha"
+    },
+    "termsOfService": {
+        "title": "Terms of Service",
+        "subtitle": "Terms and conditions governing the use of Rezge website",
+        "lastUpdated": "Last updated",
+        "lastUpdatedDate": "December 2024",
+        "tableOfContents": "Table of Contents",
+        "sections": {
+            "acceptance": {
+                "title": "Acceptance of Terms",
+                "content": "By using Rezge website, you agree to comply with these terms and conditions. If you do not agree to any of these terms, please do not use the website."
+            },
+            "eligibility": {
+                "title": "Eligibility for Use",
+                "requirements": [
+                    "Must be an adult (18 years or older)",
+                    "Must be a Muslim committed to Islamic teachings",
+                    "Must be unmarried, divorced, or widowed",
+                    "Must be serious about seeking marriage",
+                    "Must provide accurate and truthful information"
+                ]
+            },
+            "userConduct": {
+                "title": "User Conduct",
+                "intro": "Users must adhere to the following conduct:",
+                "rules": [
+                    "Respect Islamic guidelines in all interactions",
+                    "Use respectful and appropriate language in conversations",
+                    "Do not send inappropriate or immoral content",
+                    "Do not harass or disturb other users",
+                    "Do not impersonate or provide false information",
+                    "Do not use the website for commercial or promotional purposes"
+                ]
+            },
+            "prohibitedActivities": {
+                "title": "Prohibited Activities",
+                "intro": "The following activities are strictly prohibited:",
+                "activities": [
+                    "Publishing or sending pornographic or sexual content",
+                    "Requesting or exchanging personal photos of women",
+                    "Courtship for illegitimate relationships",
+                    "Using the website for fraud or scams",
+                    "Violating intellectual property rights",
+                    "Attempting to hack or disrupt the website"
+                ]
+            },
+            "accountSecurity": {
+                "title": "Account Security",
+                "intro": "You are responsible for maintaining the security of your account:",
+                "responsibilities": [
+                    "Choose a strong and secure password",
+                    "Do not share login credentials with others",
+                    "Report any unauthorized use immediately",
+                    "Update your personal information regularly",
+                    "Log out from public accounts"
+                ]
+            },
+            "intellectualProperty": {
+                "title": "Intellectual Property",
+                "content": "All content, trademarks, and designs on the website are owned by or licensed to Rezge. Copying, distributing, or using any content without written permission is prohibited."
+            },
+            "limitation": {
+                "title": "Limitation of Liability",
+                "intro": "We strive to provide the best service, but we do not guarantee:",
+                "disclaimers": [
+                    "Success in finding a life partner",
+                    "Accuracy of all information provided by users",
+                    "Uninterrupted or error-free service",
+                    "100% information security",
+                    "Compatibility of suggested matches with your expectations"
+                ]
+            },
+            "termination": {
+                "title": "Account Termination",
+                "intro": "Accounts may be terminated in the following cases:",
+                "reasons": [
+                    "Violation of terms of use or Islamic guidelines",
+                    "Providing false or misleading information",
+                    "Misconduct or harassment of users",
+                    "Using the website for illegal purposes",
+                    "User request to delete their account"
+                ]
+            },
+            "changes": {
+                "title": "Changes to Terms",
+                "content": "We reserve the right to modify these terms at any time. Users will be notified of any significant changes via email or website notification."
+            },
+            "contact": {
+                "title": "Contact",
+                "intro": "For inquiries about terms of service:",
+                "email": "legal@rezge.com",
+                "phone": "+966582352555",
+                "phoneDir": "ltr",
+                "emailLabel": "Email",
+                "phoneLabel": "Phone"
+            }
+        },
+        "importantNotice": {
+            "title": "Important Notice",
+            "content": "Please read these terms carefully before using the website. Your use of the website means your agreement to all the terms and conditions mentioned above. We are committed to strictly applying these terms to ensure a safe environment that complies with Islamic teachings for all users."
+        }
+    },
+    "footer": {
+        "brand": {
+            "name": "Rezge",
+            "description": "The first Islamic marriage platform that combines modern technology with authentic Islamic values to help you find your ideal life partner."
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "home": "Home",
+            "features": "Features",
+            "about": "About Us",
+            "search": "Search",
+            "contact": "Contact Us",
+            "help": "Help"
+        },
+        "support": {
+            "title": "Support & Help",
+            "helpCenter": "Help Center",
+            "faq": "FAQ",
+            "contact": "Contact Us",
+            "islamicGuidelines": "Islamic Guidelines",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service"
+        },
+        "contactInfo": {
+            "title": "Contact Us",
+            "email": "info@rezge.com",
+            "phone": "+966582352555",
+            "address": "Riyadh, Saudi Arabia"
+        },
+        "newsletter": {
+            "title": "Subscribe to Newsletter",
+            "placeholder": "Your email address",
+            "subscribe": "Subscribe"
+        },
+        "copyright": "© 2024 Rezge. All rights reserved."
+    },
+    "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 8 characters",
+        "passwordsNotMatch": "Passwords do not match",
+        "nameRequired": "Name is required",
+        "phoneRequired": "Phone number is required",
+        "ageRequired": "Age is required",
+        "ageMinimum": "Age must be at least 18 years",
+        "termsRequired": "You must agree to the Terms and Conditions"
+    },
+    "loading": {
+        "verifyingIdentity": "Verifying Identity",
+        "pleaseWait": "Please wait...",
+        "loadingDashboard": "Loading dashboard..."
+    },
+    "dashboard": {
+        "welcome": "Welcome, {{name}} 👋",
+        "overview": "Here's an overview of your activity today",
+        "refresh": "Refresh",
+        "settings": "Settings",
+        "retry": "Retry",
+        "stats": {
+            "profileViews": "Profile Views",
+            "profileViewsDesc": "Profile views",
+            "profileViewsLast30Days": "Last 30 days",
+            "likesReceived": "Likes Received",
+            "likesReceivedDesc": "Likes received",
+            "likesTotal": "Total",
+            "activeMatches": "Active Matches",
+            "activeMatchesDesc": "Active match",
+            "newThisWeek": "{{count}} new this week",
+            "messagesInConversations": "Messages in Conversations",
+            "messagesDesc": "Messages in conversations",
+            "unreadMessages": "{{count}} unread",
+            "allMessagesRead": "All messages read",
+            "responseRate": "Response Rate",
+            "excellent": "Excellent",
+            "good": "Good",
+            "needsImprovement": "Needs Improvement"
+        },
+        "profileCompletion": {
+            "title": "Profile Completion",
+            "completed": "{{percentage}}% complete",
+            "excellent": "Excellent profile!",
+            "canImprove": "Your profile can be improved",
+            "improvementTips": "Tips for improvement:",
+            "viewMore": "View more...",
+            "improveProfile": "Improve Profile"
+        },
+        "suggestedMatches": {
+            "title": "Suggested Matches",
+            "viewAll": "View All",
+            "viewProfile": "View Profile",
+            "noMatches": "No new matches currently",
+            "noMatchesDesc": "We'll notify you when new matches appear",
+            "notSpecified": "Not specified",
+            "years": "years",
+            "compatibilityScore": "{{score}}%"
+        },
+        "quickActions": {
+            "search": {
+                "title": "Search",
+                "subtitle": "For new matches"
+            },
+            "messages": {
+                "title": "Messages",
+                "subtitle": "Conversations"
+            },
+            "matches": {
+                "title": "Matches",
+                "subtitle": "{{count}} active"
+            },
+            "likes": {
+                "title": "Likes",
+                "subtitle": "{{count}} received"
+            }
+        },
+        "lastActivity": {
+            "title": "Last Activity",
+            "lastLogin": "Last login: {{date}}",
+            "noRecentLogin": "No recent login",
+            "tip": "💡 Tip: Stay active to increase match opportunities"
+        },
+        "recentActivity": {
+            "title": "Recent Activity",
+            "viewAll": "View All",
+            "noActivity": "No recent activity",
+            "startBrowsing": "Start browsing suggested matches"
+        },
+        "profileTips": {
+            "title": "Tips to Improve Your Profile",
+            "subtitle": "Follow these tips to increase match opportunities",
+            "excellentProfile": "Your profile is excellent!",
+            "allComplete": "All information is complete",
+            "improveProfile": "Improve Profile",
+            "tips": {
+                "completeProfile": "Complete all sections of your profile to increase matching opportunities",
+                "addBio": "Write a detailed personal bio that expresses your personality and goals",
+                "addEducation": "Add information about your education and academic qualifications",
+                "addOccupation": "Add information about your work or current profession",
+                "addReligiousCommitment": "Specify your level of religious commitment to help others understand your personality",
+                "addMaritalStatus": "Add information about your marital status",
+                "profileExcellent": "Your profile is excellent! Keep updating it regularly",
+                "interactWithMatches": "Interact with suggested matches to increase dating opportunities",
+                "beActiveInMessaging": "Be active in sending and replying to messages",
+                "addDetailedBio": "Add a detailed personal bio (at least 50 characters) to improve matching opportunities",
+                "addEducationInfo": "Add education information to help others understand your academic background",
+                "addProfessionInfo": "Add profession information to show your professional status",
+                "addReligiousInfo": "Add religious commitment information for better matching with compatible people",
+                "addNationality": "Add nationality to help others learn about your cultural background",
+                "addFinancialStatus": "Add financial status information (optional) for more transparency",
+                "profileComplete": "Your profile is complete! Keep updating your information regularly",
+                "interactForSuccess": "Interact with suggested matches to increase success opportunities"
+            }
+        },
+        "errors": {
+            "loadingError": "An error occurred while loading dashboard data. Please try again.",
+            "retry": "Retry"
+        }
+    },
+    "notifications": {
+        "title": "Notifications",
+        "viewAll": "View All Notifications",
+        "markAsRead": "Mark as read",
+        "dismiss": "Dismiss",
+        "empty": "No new notifications",
+        "retry": "Try Again",
+        "viewDetails": "View Details",
+        "justNow": "Just now",
+        "minutesAgo": "{{count}} minute ago",
+        "minutesAgo_plural": "{{count}} minutes ago",
+        "hoursAgo": "{{count}} hour ago",
+        "hoursAgo_plural": "{{count}} hours ago",
+        "daysAgo": "{{count}} day ago",
+        "daysAgo_plural": "{{count}} days ago",
+        "noNotifications": "No new notifications",
+        "noNotificationsDesc": "They will appear here when someone interacts with you",
+        "page": {
+            "title": "Notifications",
+            "newNotifications": "{{count}} new notification",
+            "newNotifications_plural": "{{count}} new notifications",
+            "loading": "Loading notifications...",
+            "backToDashboard": "Back to Dashboard",
+            "filters": {
+                "all": "All",
+                "unread": "Unread",
+                "profileView": "Profile Views",
+                "like": "Likes",
+                "message": "Messages",
+                "match": "Matches",
+                "verification": "Verification",
+                "system": "System"
+            },
+            "markAllAsRead": "Mark all as read",
+            "noNotificationsInCategory": "No notifications in this category",
+            "noNotificationsCategoryDesc": "Try changing the filter to see other notifications",
+            "noNotificationsAtAll": "No notifications",
+            "noNotificationsAtAllDesc": "Notifications will appear here when someone interacts with you or views your profile",
+            "startSearching": "Start searching for matches",
+            "timeAgo": {
+                "now": "Now",
+                "minutesAgo": "{{count}} minute ago",
+                "minutesAgo_plural": "{{count}} minutes ago",
+                "hoursAgo": "{{count}} hour ago",
+                "hoursAgo_plural": "{{count}} hours ago",
+                "daysAgo": "{{count}} day ago",
+                "daysAgo_plural": "{{count}} days ago"
+            }
+        },
+        "content": {
+            "profileView": {
+                "title": "New Profile View",
+                "message": "{{name}} viewed your profile",
+                "actionText": "View Profile"
+            },
+            "like": {
+                "title": "New Like",
+                "message": "{{name}} liked your profile",
+                "actionText": "View Profile"
+            },
+            "message": {
+                "title": "New Message",
+                "message": "{{name}} sent you a new message",
+                "actionText": "Read Message"
+            },
+            "match": {
+                "title": "New Match",
+                "message": "You have a new match with {{name}}",
+                "actionText": "Start Conversation"
+            },
+            "likeAccepted": {
+                "title": "Like Accepted",
+                "message": "{{name}} accepted your like",
+                "actionText": "View Profile"
+            },
+            "likeRejected": {
+                "title": "Like Rejected",
+                "message": "{{name}} rejected your like",
+                "actionText": "View Profile"
+            },
+            "system": {
+                "title": "System Notification",
+                "message": "{{message}}",
+                "actionText": "View Details"
+            },
+            "verification": {
+                "title": "Verification Notification",
+                "message": "{{message}}",
+                "actionText": "View Details"
+            },
+            "warning": {
+                "title": "Warning",
+                "message": "{{message}}",
+                "actionText": "View Details"
+            },
+            "reportAccepted": {
+                "title": "Your Report Was Accepted",
+                "message": "Your report has been reviewed and accepted by our moderation team. We will take appropriate action.",
+                "actionText": "View Report Details",
+                "fullMessage": "Your report has been reviewed and accepted by our moderation team.\n\nWe will take appropriate action against the reported user as soon as possible.\n\nThank you for helping us maintain community safety! 🙏"
+            },
+            "reportRejected": {
+                "title": "Your Report Was Reviewed",
+                "message": "Your report has been reviewed by our moderation team and we decided not to take action at this time. Thank you for your concern about community safety.",
+                "messageWithReason": "Your report has been reviewed by our moderation team. {{reason}}",
+                "actionText": "View Report Details",
+                "fullMessage": "Your report has been reviewed by our moderation team.\n\nAfter careful review, we decided not to take action at this time.\n\nReason: {{reason}}\n\nThank you for your concern about community safety."
+            },
+            "reportReceived": {
+                "title": "Report Received",
+                "message": "Thank you for submitting your report. We have received it and it's being reviewed by our moderation team.",
+                "actionText": "View Report Details",
+                "fullMessage": "Thank you for submitting your report. We have received it and it's being reviewed by our moderation team.\n\nWe will notify you of the result as soon as possible.\n\nWe appreciate your concern for our community safety! 🛡️"
+            },
+            "verificationApproved": {
+                "title": "Account Verified Successfully",
+                "message": "Congratulations! Your identity has been successfully verified. You can now enjoy all website features.",
+                "actionText": "View Profile"
+            },
+            "verificationRejected": {
+                "title": "Verification Request Rejected",
+                "message": "Your identity verification request has been rejected. Please try again.",
+                "messageWithReason": "Your identity verification request has been rejected. Reason: {{reason}}",
+                "actionText": "Resubmit Request",
+                "retryText": "Try Again"
+            }
+        },
+        "types": {
+            "profileView": "Profile View",
+            "like": "Like",
+            "message": "Message",
+            "match": "Match",
+            "system": "System",
+            "verification": "Verification",
+            "verification_approved": "Verification Approved",
+            "verification_rejected": "Verification Rejected",
+            "warning": "Warning",
+            "report_accepted": "Report Accepted",
+            "report_rejected": "Report Rejected",
+            "report_received": "Report Received"
+        }
+    },
+    "reportDetails": {
+        "pageTitle": "Report Details",
+        "reportId": "Report ID",
+        "copyReportId": "Click to copy report ID",
+        "reportIdCopied": "Copied!",
+        "loading": "Loading report details...",
+        "error": {
+            "title": "Error Loading Report",
+            "notFound": "Report not found or you don't have permission to view it",
+            "general": "An error occurred while loading report details",
+            "backToNotifications": "Back to Notifications"
+        },
+        "status": {
+            "title": "Report Status",
+            "pending": {
+                "label": "Pending",
+                "description": "The report is awaiting review by the moderation team"
+            },
+            "reviewing": {
+                "label": "Under Review",
+                "description": "The report is currently being reviewed by the moderation team"
+            },
+            "resolved": {
+                "label": "Accepted",
+                "description": "The report has been accepted and appropriate action has been taken"
+            },
+            "rejected": {
+                "label": "Rejected",
+                "description": "The report has been reviewed and it was decided not to take action"
+            }
+        },
+        "details": {
+            "title": "Report Details",
+            "reportedUser": "Reported User",
+            "reason": "Report Reason",
+            "severity": "Severity Level",
+            "description": "Report Description",
+            "createdDate": "Report Date"
+        },
+        "reasons": {
+            "fake_profile": "Fake Profile",
+            "inappropriate_content": "Inappropriate Content",
+            "harassment": "Harassment",
+            "spam": "Spam",
+            "scam": "Scam",
+            "inappropriate_behavior": "Inappropriate Behavior",
+            "other": "Other"
+        },
+        "severity": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High"
+        },
+        "adminResponse": {
+            "title": "Administration Response",
+            "reviewedBy": "Reviewed by",
+            "reviewDate": "Review Date",
+            "adminNotes": "Admin Notes"
+        },
+        "timeline": {
+            "title": "Timeline",
+            "created": "Report Created",
+            "reviewStarted": "Review Started",
+            "accepted": "Report Accepted",
+            "rejected": "Report Rejected"
+        }
+    },
+    "publicProfile": {
+        "loading": {
+            "message": "Loading profile...",
+            "title": "Loading Profile"
+        },
+        "error": {
+            "notFound": "Profile not found or not available for viewing",
+            "doesNotExist": "Profile does not exist",
+            "loadingError": "An error occurred while loading the profile",
+            "unavailable": "Profile Unavailable",
+            "profilePrivate": "This profile is private and cannot be viewed publicly",
+            "authRequired": "You must be logged in to view profiles",
+            "verificationRequired": "This profile is only available to verified members",
+            "invalidStatus": "Your account is inactive or invalid",
+            "sameGenderNotAllowed": "Access to profiles of the same gender is not allowed for Islamic guidelines",
+            "backButton": "Back"
+        },
+        "header": {
+            "backButton": "Back",
+            "sendLike": "Send Like",
+            "likeSent": "Like Sent",
+            "removeLike": "Remove Like",
+            "sendMessage": "Send Message",
+            "sending": "Sending...",
+            "removing": "Removing...",
+            "checking": "Checking...",
+            "moreOptions": "More Options"
+        },
+        "actions": {
+            "blockUser": "Block User",
+            "unblockUser": "Unblock User",
+            "reportUser": "Report User"
+        },
+        "block": {
+            "title": "Confirm Block User",
+            "message": "Are you sure you want to block {{name}}? You won't be able to see their profile or receive messages from them, and they won't be able to see your profile or send you messages.",
+            "confirmButton": "Yes, Block User",
+            "cancelButton": "Cancel",
+            "success": "User blocked successfully",
+            "successDesc": "{{name}} has been blocked successfully. You won't be able to see their profile or receive messages from them.",
+            "error": "Error blocking user",
+            "errorDesc": "An error occurred while trying to block the user. Please try again."
+        },
+        "unblock": {
+            "title": "Confirm Unblock User",
+            "message": "Are you sure you want to unblock {{name}}? You will be able to see their profile and receive messages from them again, and they will be able to see your profile and send you messages.",
+            "confirmButton": "Yes, Unblock User",
+            "cancelButton": "Cancel",
+            "success": "User unblocked successfully",
+            "successDesc": "{{name}} has been unblocked successfully. You can now see their profile and receive messages from them.",
+            "error": "Error unblocking user",
+            "errorDesc": "An error occurred while trying to unblock the user. Please try again."
+        },
+        "report": {
+            "title": "Report User",
+            "subtitle": "Report {{name}}",
+            "reasonLabel": "Reason for Report",
+            "selectReason": "Select a reason for reporting",
+            "descriptionLabel": "Detailed Description",
+            "descriptionPlaceholder": "Please describe the issue in detail...",
+            "descriptionHint": "Description must be at least 10 characters",
+            "descriptionTooShort": "Description too short",
+            "descriptionTooShortDesc": "Description must be at least 10 characters",
+            "submitButton": "Submit Report",
+            "cancelButton": "Cancel",
+            "submitting": "Submitting...",
+            "success": "Report submitted successfully",
+            "successDesc": "Thank you for reporting. The report will be reviewed by our administration team.",
+            "error": "Error submitting report",
+            "errorDesc": "An error occurred while submitting the report. Please try again.",
+            "reasons": {
+                "inappropriateBehavior": "Inappropriate Behavior",
+                "fakeProfile": "Fake Profile",
+                "harassment": "Harassment",
+                "spam": "Spam Messages",
+                "inappropriateContent": "Inappropriate Content",
+                "scamAttempt": "Scam Attempt",
+                "underage": "Underage",
+                "marriedPerson": "Married Person",
+                "other": "Other"
+            }
+        },
+        "sections": {
+            "bio": "Personal Bio",
+            "lookingFor": "What I'm Looking For",
+            "basicInfo": "Basic Information",
+            "religiousInfo": "Religious Commitment",
+            "educationWork": "Education & Work",
+            "physicalInfo": "Physical Information",
+            "financialHealth": "Financial & Health Status"
+        },
+        "fields": {
+            "maritalStatus": "Marital Status",
+            "marriageType": "Marriage Type",
+            "childrenCount": "Number of Children",
+            "nationality": "Nationality",
+            "residenceLocation": "Residence Location",
+            "commitmentLevel": "Commitment Level",
+            "religiosityLevel": "Religiosity Level",
+            "prayerCommitment": "Prayer Commitment",
+            "smoking": "Smoking",
+            "beard": "Beard",
+            "hijab": "Hijab",
+            "education": "Education",
+            "educationLevel": "Education Level",
+            "profession": "Profession",
+            "workField": "Work Field",
+            "jobTitle": "Job Title",
+            "height": "Height",
+            "weight": "Weight",
+            "skinColor": "Skin Color",
+            "bodyType": "Body Type",
+            "financialStatus": "Financial Status",
+            "monthlyIncome": "Monthly Income",
+            "healthStatus": "Health Status"
+        },
+        "values": {
+            "yearsOld": "years old",
+            "male": "Male",
+            "female": "Female",
+            "memberSince": "Member since",
+            "notSpecified": "Not specified",
+            "yes": "Yes",
+            "no": "No",
+            "cm": "cm",
+            "kg": "kg",
+            "maritalStatus": {
+                "single": "Single",
+                "married": "Married",
+                "divorced": "Divorced (Male)",
+                "widowed": "Widowed (Male)",
+                "unmarried": "Unmarried",
+                "divorced_female": "Divorced (Female)",
+                "widowed_female": "Widowed (Female)"
+            },
+            "marriageType": {
+                "first_wife": "First Wife",
+                "second_wife": "Second Wife",
+                "only_wife": "Only Wife",
+                "no_objection_polygamy": "No Objection to Polygamy"
+            },
+            "religiousCommitment": {
+                "committed": "Committed",
+                "conservative": "Conservative",
+                "prefer_not_say": "Prefer not to say"
+            },
+            "religiosityLevel": {
+                "not_religious": "Not Religious",
+                "somewhat_religious": "Somewhat Religious",
+                "religious": "Religious"
+            },
+            "prayerCommitment": {
+                "dont_pray": "Doesn't Pray",
+                "pray_all": "Prays All Prayers",
+                "pray_sometimes": "Prays Sometimes",
+                "prefer_not_say": "Prefer Not to Say"
+            },
+            "educationLevel": {
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "diploma": "Diploma",
+                "bachelor": "Bachelor's",
+                "master": "Master's",
+                "phd": "PhD"
+            },
+            "financialStatus": {
+                "poor": "Poor",
+                "below_average": "Below Average",
+                "average": "Average",
+                "above_average": "Above Average",
+                "wealthy": "Wealthy"
+            },
+            "monthlyIncome": {
+                "less_3000": "Less than 3000",
+                "3000_5000": "3000 - 5000",
+                "5000_8000": "5000 - 8000",
+                "8000_12000": "8000 - 12000",
+                "12000_20000": "12000 - 20000",
+                "more_20000": "More than 20000",
+                "prefer_not_say": "Prefer Not to Say"
+            },
+            "healthStatus": {
+                "excellent": "Excellent",
+                "very_good": "Very Good",
+                "good": "Good",
+                "fair": "Fair",
+                "poor": "Poor",
+                "prefer_not_say": "Prefer Not to Say"
+            },
+            "hijab": {
+                "no_hijab": "No Hijab",
+                "hijab": "Hijab",
+                "niqab": "Niqab",
+                "prefer_not_say": "Prefer Not to Say"
+            },
+            "skinColor": {
+                "very_fair": "Very Fair",
+                "fair": "Fair",
+                "medium": "Medium",
+                "olive": "Olive",
+                "brown": "Brown",
+                "dark": "Dark",
+                "prefer_not_say": "Prefer Not to Say"
+            },
+            "bodyType": {
+                "slim": "Slim",
+                "average": "Average",
+                "athletic": "Athletic",
+                "curvy": "Curvy",
+                "heavy": "Heavy",
+                "prefer_not_say": "Prefer Not to Say"
+            }
+        }
+    },
+    "articles": {
+        "loading": "Loading articles...",
+        "page": {
+            "title": "Islamic Marriage Articles & Tips",
+            "subtitle": "Discover the latest articles and advice from marriage experts and Islamic counselors to help you in your journey to find a life partner"
+        },
+        "search": {
+            "placeholder": "Search articles and tips..."
+        },
+        "categories": {
+            "title": "Article Categories",
+            "subtitle": "Choose the category that interests you to browse related articles",
+            "all": "All Articles",
+            "allDescription": "Browse all available articles and tips",
+            "articlesCount": "articles"
+        },
+        "results": {
+            "showing": "Showing",
+            "articles": "articles",
+            "in": "in",
+            "withTag": "with tag"
+        },
+        "hashtags": {
+            "title": "Popular Tags",
+            "subtitle": "Discover the most popular topics in our articles"
+        },
+        "filters": {
+            "clear": "Clear All Filters"
+        },
+        "sort": {
+            "latest": "Latest",
+            "popular": "Most Viewed",
+            "trending": "Most Liked"
+        },
+        "noResults": {
+            "title": "No Articles Found",
+            "description": "We couldn't find any articles matching your search or filters",
+            "clearFilters": "Clear Filters"
+        },
+        "featured": "Featured",
+        "articleImage": "Article Image",
+        "readTime": "min read",
+        "readMore": "Read More",
+        "views": "views",
+        "comments": "comments",
+        "tags": "Tags",
+        "share": "Share",
+        "copyLink": "Copy Link",
+        "backToArticles": "Back to Articles",
+        "notFound": {
+            "title": "Article Not Found",
+            "description": "Sorry, we couldn't find the requested article",
+            "backToArticles": "Back to Articles"
+        },
+        "commentsSection": "Comments",
+        "viewMode": {
+            "grid": "Grid View",
+            "list": "List View"
+        },
+        "language": {
+            "switchToArabic": "Switch to Arabic",
+            "switchToEnglish": "Switch to English",
+            "currentLanguage": "Current Language"
+        },
+        "commentsDescription": "Share your thoughts and experiences, and engage with others in meaningful discussion",
+        "addComment": "Add Comment",
+        "commentPlaceholder": "Share your thoughts or experience...",
+        "submitComment": "Post Comment",
+        "noComments": "No comments yet",
+        "noCommentsDesc": "Be the first to share your thoughts about this article",
+        "allComments": "All Comments",
+        "commentsCount": "comments",
+        "commentGuidelines": "Please follow Islamic etiquette when commenting",
+        "reply": "Reply",
+        "relatedArticles": "Related Articles",
+        "loginToComment": "Login to Comment",
+        "loginToCommentDesc": "You must be logged in to add a comment on this article",
+        "loginToLike": "Login to like this article",
+        "loginToLikeComment": "Login to like comments",
+        "loginToViewComments": "Login to View Comments",
+        "loginToViewCommentsDesc": "Comments are available only to registered members. Please login to see what others are saying"
+    },
+    "comments": {
+        "justNow": "Just now",
+        "minutesAgo": "{{count}} minutes ago",
+        "hoursAgo": "{{count}} hours ago",
+        "daysAgo": "{{count}} days ago",
+        "reply": "Reply",
+        "replyingTo": "Replying to",
+        "replyPlaceholder": "Write your reply here...",
+        "submitReply": "Post Reply",
+        "showReplies": "Show {{count}} replies",
+        "hideReplies": "Hide replies",
+        "showMoreReplies": "Show {{count}} more replies",
+        "showLessReplies": "Show fewer replies",
+        "showMore": "Show more",
+        "originalComment": "Original comment",
+        "copyContent": "Copy content",
+        "deleteComment": "Delete comment",
+        "deleteReply": "Delete reply",
+        "confirmDelete": "Are you sure you want to delete this comment?",
+        "confirmDeleteComment": "Confirm Delete Comment",
+        "confirmDeleteReply": "Confirm Delete Reply",
+        "deleteCommentMessage": "Are you sure you want to delete this comment? It will be permanently deleted and cannot be recovered.",
+        "deleteReplyMessage": "Are you sure you want to delete this reply? It will be permanently deleted and cannot be recovered.",
+        "deleteError": "Delete Failed",
+        "deleteErrorDesc": "An error occurred while deleting the comment. Please try again.",
+        "deleteSuccess": "Successfully Deleted",
+        "deleteSuccessDesc": "The comment has been deleted successfully",
+        "copySuccess": "Successfully Copied",
+        "copySuccessDesc": "Comment content has been copied to clipboard",
+        "copyError": "Copy Failed",
+        "copyErrorDesc": "An error occurred while copying content. Please try again.",
+        "authRequired": "Login Required",
+        "authRequiredDesc": "You must be logged in to delete comments",
+        "commentAdded": "Comment Added",
+        "commentAddedDesc": "Your comment has been posted successfully",
+        "commentError": "Failed to Add Comment",
+        "commentErrorDesc": "An error occurred while posting your comment. Please try again.",
+        "replyAdded": "Reply Added",
+        "replyAddedDesc": "Your reply has been posted successfully",
+        "replyError": "Failed to Add Reply",
+        "replyErrorDesc": "An error occurred while posting your reply. Please try again.",
+        "likeAdded": "Liked",
+        "likeAddedDesc": "You liked this comment",
+        "likeError": "Like Failed",
+        "likeErrorDesc": "An error occurred while liking. Please try again.",
+        "loginToLikeDesc": "You must be logged in to like comments"
+    },
+    "subscription": {
+        "title": "Subscription Management",
+        "subtitle": "Choose the plan that suits you and enjoy all features",
+        "current": {
+            "title": "Your Current Subscription",
+            "badge": "Your Current Plan"
+        },
+        "status": {
+            "active": "Active",
+            "trial": "Trial Period",
+            "expired": "Expired",
+            "cancelled": "Cancelled"
+        },
+        "trial": {
+            "start": "Start Free Trial",
+            "starting": "Starting...",
+            "started": "Trial period started successfully!",
+            "error": "Failed to start trial period",
+            "remaining": "{{days}} days remaining"
+        },
+        "choose": "Choose This Plan",
+        "upgrade": "Subscribe Now",
+        "viewPlans": "View Plans",
+        "popular": "Most Popular",
+        "noActive": "No Active Subscription",
+        "features": {
+            "title": "Available Features",
+            "more": "and {{count}} more features"
+        },
+        "limits": {
+            "title": "Usage Limits"
+        },
+        "plans": {
+            "title": "Available Plans",
+            "subtitle": "Choose the plan that fits your needs"
+        },
+        "plan": {
+            "basic": "Basic Plan",
+            "premium": "Premium Plan",
+            "vip": "VIP Plan",
+            "trial": "Trial Period"
+        },
+        "period": {
+            "monthly": "month",
+            "yearly": "year"
+        },
+        "noActive": {
+            "title": "No Active Subscription",
+            "description": "Choose one of the plans below to enjoy all features"
+        },
+        "choose": "Choose This Plan",
+        "popular": "Most Popular",
+        "unlimited": "Unlimited",
+        "expires": "Expires on",
+        "help": {
+            "title": "Need Help?",
+            "description": "Our support team is available to help you choose the right plan",
+            "contact": "Contact Support"
+        },
+        "banner": {
+            "trial": {
+                "title": "Start your free trial now!",
+                "description": "3 days free with all basic plan features",
+                "lastDay": "Last day of your free trial!",
+                "remaining": "{{days}} days remaining in your free trial",
+                "upgrade": "Subscribe now to continue enjoying all features"
+            },
+            "expired": {
+                "title": "Your subscription is inactive",
+                "description": "Subscribe to one of our plans to enjoy all features"
+            }
+        },
+        "trial": {
+            "enabled": "Trial period available",
+            "disabled": "Trial period not available",
+            "days": "{{days}} days",
+            "settings": "Trial Period Settings"
+        },
+        "banner": {
+            "subscriptionExpired": {
+                "title": "Your paid subscription has expired",
+                "description": "Renew your subscription now to return to all premium features"
+            },
+            "trialExpired": {
+                "title": "Your trial period has ended",
+                "description": "Subscribe now to continue enjoying all features"
+            },
+            "noSubscription": {
+                "title": "No active subscription",
+                "description": "Subscribe to one of our plans to enjoy all features"
+            }
+        },
+        "status": {
+            "expired": "Expired",
+            "trialExpired": "Trial Ended",
+            "none": "No Subscription"
+        },
+        "renewNow": "Renew Now",
+        "subscribeNow": "Subscribe Now"
+    },
+    "admin": {
+        "subscriptions": {
+            "title": "Subscription Management",
+            "description": "Manage plans, subscriptions and payments",
+            "overview": "Overview",
+            "plans": "Plans",
+            "subscriptions": "Subscriptions",
+            "payments": "Payments",
+            "trials": "Trial Periods",
+            "stats": {
+                "totalSubscriptions": "Total Subscriptions",
+                "activeSubscriptions": "Active Subscriptions",
+                "activeTrials": "Active Trial Periods",
+                "monthlyRevenue": "Monthly Revenue",
+                "totalRevenue": "Total Revenue",
+                "currentSubscribers": "Current Subscribers"
+            },
+            "actions": {
+                "addPlan": "Add New Plan",
+                "editPlan": "Edit Plan",
+                "deletePlan": "Delete Plan",
+                "viewDetails": "View Details",
+                "filter": "Filter",
+                "export": "Export",
+                "refresh": "Refresh"
+            },
+            "status": {
+                "active": "Active",
+                "expired": "Expired",
+                "cancelled": "Cancelled",
+                "suspended": "Suspended",
+                "trial": "Trial Period"
+            },
+            "billing": {
+                "monthly": "Monthly",
+                "yearly": "Yearly"
+            },
+            "table": {
+                "user": "User",
+                "plan": "Plan",
+                "status": "Status",
+                "startDate": "Start Date",
+                "endDate": "End Date",
+                "amount": "Amount",
+                "actions": "Actions",
+                "price": "Price",
+                "billingPeriod": "Billing Period",
+                "defaultPlan": "Default Plan"
+            },
+            "messages": {
+                "loadingData": "Loading subscription data...",
+                "noSubscriptions": "No subscriptions currently",
+                "noPlans": "No plans available",
+                "paymentsComingSoon": "Payment records will be added soon"
+            }
+        }
+    }
+}

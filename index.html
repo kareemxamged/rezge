@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/main.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/main-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/main-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/main-96.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>رزقي - موقع الزواج الإسلامي</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- معالج أخطاء إضافات المتصفح -->
+    <script>
+        (function() {
+            'use strict';
+
+            // قائمة بأسماء ملفات الإضافات الشائعة
+            const extensionFiles = [
+                'content_script',
+                'contentscript',
+                'background',
+                'inject',
+                'extension',
+                'chrome-extension',
+                'moz-extension'
+            ];
+
+            // قائمة برسائل أخطاء الإضافات الشائعة
+            const extensionErrorMessages = [
+                'FrameDoesNotExistError',
+                'Frame does not exist',
+                'runtime.lastError',
+                'Could not establish connection',
+                'Receiving end does not exist',
+                'message port closed',
+                'back/forward cache',
+                'Extension context invalidated',
+                'message channel is closed'
+            ];
+
+            // معالج الأخطاء العام
+            window.addEventListener('error', function(event) {
+                const errorMessage = event.message || '';
+                const filename = event.filename || '';
+
+                // فحص اسم الملف
+                const isExtensionFile = extensionFiles.some(file =>
+                    filename.toLowerCase().includes(file)
+                );
+
+                // فحص رسالة الخطأ
+                const isExtensionMessage = extensionErrorMessages.some(msg =>
+                    errorMessage.toLowerCase().includes(msg.toLowerCase())
+                );
+
+                if (isExtensionFile || isExtensionMessage) {
+                    console.warn('🔧 تم تجاهل خطأ من إضافة متصفح:', {
+                        message: errorMessage,
+                        filename: filename,
+                        lineno: event.lineno,
+                        type: isExtensionFile ? 'extension-file' : 'extension-message'
+                    });
+                    event.preventDefault();
+                    return true;
+                }
+            }, true);
+
+            // معالج الأخطاء غير المعالجة
+            window.addEventListener('unhandledrejection', function(event) {
+                const reason = event.reason;
+                let reasonText = '';
+
+                if (reason) {
+                    if (typeof reason === 'string') {
+                        reasonText = reason;
+                    } else if (reason.message) {
+                        reasonText = reason.message;
+                    } else if (reason.stack) {
+                        reasonText = reason.stack;
+                    } else {
+                        reasonText = String(reason);
+                    }
+                }
+
+                // فحص اسم الملف في stack trace
+                const isExtensionFile = extensionFiles.some(file =>
+                    reasonText.toLowerCase().includes(file)
+                );
+
+                // فحص رسالة الخطأ
+                const isExtensionMessage = extensionErrorMessages.some(msg =>
+                    reasonText.toLowerCase().includes(msg.toLowerCase())
+                );
+
+                if (isExtensionFile || isExtensionMessage) {
+                    console.warn('🔧 تم تجاهل Promise rejection من إضافة متصفح:', {
+                        reason: reason,
+                        type: isExtensionFile ? 'extension-file' : 'extension-message'
+                    });
+                    event.preventDefault();
+                    return true;
+                }
+            });
+
+            // حماية MutationObserver من التداخل
+            const originalMutationObserver = window.MutationObserver;
+            if (originalMutationObserver) {
+                window.MutationObserver = function(callback) {
+                    return new originalMutationObserver(function(mutations, observer) {
+                        try {
+                            callback.call(this, mutations, observer);
+                        } catch (error) {
+                            if (error.message && error.message.includes('deref')) {
+                                console.warn('🔧 تم تجاهل خطأ MutationObserver من إضافة:', error.message);
+                                return;
+                            }
+                            throw error;
+                        }
+                    });
+                };
+            }
+
+            // معالج خاص لأخطاء runtime.lastError
+            const originalConsoleError = console.error;
+            console.error = function(...args) {
+                const message = args.join(' ');
+
+                // فحص رسائل runtime.lastError
+                const isRuntimeError = extensionErrorMessages.some(msg =>
+                    message.toLowerCase().includes(msg.toLowerCase())
+                );
+
+                if (isRuntimeError) {
+                    console.warn('🔧 تم تجاهل runtime.lastError من إضافة متصفح:', message);
+                    return;
+                }
+
+                // استدعاء console.error الأصلي للأخطاء الأخرى
+                originalConsoleError.apply(console, args);
+            };
+        })();
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

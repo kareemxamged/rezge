@@ -1,0 +1,401 @@
+/* نظام الثيمات للوحة التحكم الإدارية */
+
+/* الثيم الفاتح (افتراضي) */
+:root,
+.light-theme {
+  /* الألوان الأساسية */
+  --admin-primary: #6366f1;
+  --admin-primary-dark: #4f46e5;
+  --admin-primary-light: #a5b4fc;
+  --admin-secondary: #64748b;
+  --admin-success: #10b981;
+  --admin-warning: #f59e0b;
+  --admin-error: #ef4444;
+  --admin-info: #3b82f6;
+  
+  /* خلفيات */
+  --admin-bg-primary: #ffffff;
+  --admin-bg-secondary: #f8fafc;
+  --admin-bg-tertiary: #f1f5f9;
+  --admin-bg-quaternary: #e2e8f0;
+  
+  /* النصوص */
+  --admin-text-primary: #0f172a;
+  --admin-text-secondary: #475569;
+  --admin-text-tertiary: #94a3b8;
+  --admin-text-quaternary: #cbd5e1;
+  
+  /* الحدود */
+  --admin-border: #e2e8f0;
+  --admin-border-light: #f1f5f9;
+  --admin-border-dark: #cbd5e1;
+  
+  /* الظلال */
+  --admin-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --admin-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --admin-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --admin-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* تدرجات خاصة */
+  --admin-gradient-primary: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-primary-dark) 100%);
+  --admin-gradient-bg: linear-gradient(135deg, var(--admin-bg-secondary) 0%, var(--admin-bg-tertiary) 100%);
+  --admin-gradient-card: linear-gradient(135deg, var(--admin-bg-primary) 0%, var(--admin-bg-secondary) 100%);
+}
+
+/* الثيم المظلم */
+.dark-theme {
+  /* الألوان الأساسية */
+  --admin-primary: #818cf8;
+  --admin-primary-dark: #6366f1;
+  --admin-primary-light: #c7d2fe;
+  --admin-secondary: #94a3b8;
+  --admin-success: #34d399;
+  --admin-warning: #fbbf24;
+  --admin-error: #f87171;
+  --admin-info: #60a5fa;
+  
+  /* خلفيات */
+  --admin-bg-primary: #1e293b;
+  --admin-bg-secondary: #0f172a;
+  --admin-bg-tertiary: #020617;
+  --admin-bg-quaternary: #334155;
+  
+  /* النصوص */
+  --admin-text-primary: #f8fafc;
+  --admin-text-secondary: #e2e8f0;
+  --admin-text-tertiary: #94a3b8;
+  --admin-text-quaternary: #64748b;
+  
+  /* الحدود */
+  --admin-border: #334155;
+  --admin-border-light: #475569;
+  --admin-border-dark: #1e293b;
+  
+  /* الظلال */
+  --admin-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --admin-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --admin-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --admin-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  
+  /* تدرجات خاصة */
+  --admin-gradient-primary: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-primary-dark) 100%);
+  --admin-gradient-bg: linear-gradient(135deg, var(--admin-bg-secondary) 0%, var(--admin-bg-tertiary) 100%);
+  --admin-gradient-card: linear-gradient(135deg, var(--admin-bg-primary) 0%, var(--admin-bg-secondary) 100%);
+}
+
+/* أزرار تبديل الثيم */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--admin-bg-secondary);
+  border: 1px solid var(--admin-border);
+  border-radius: 0.5rem;
+  color: var(--admin-text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-primary-dark) 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: white;
+  border-color: var(--admin-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.theme-toggle-btn:hover::before {
+  opacity: 1;
+}
+
+.theme-toggle-btn:hover .theme-icon,
+.theme-toggle-btn:hover .theme-label {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.simple-theme-toggle {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--admin-bg-secondary);
+  border: 1px solid var(--admin-border);
+  border-radius: 0.5rem;
+  color: var(--admin-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.simple-theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-primary-dark) 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.simple-theme-toggle:hover {
+  color: white;
+  border-color: var(--admin-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.simple-theme-toggle:hover::before {
+  opacity: 1;
+}
+
+.simple-theme-toggle:hover svg {
+  position: relative;
+  z-index: 1;
+}
+
+.simple-theme-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+/* تحسينات للانتقال بين الثيمات */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* تحسينات خاصة للوضع المظلم */
+.dark-theme .modern-admin-layout {
+  background: var(--admin-gradient-bg);
+}
+
+.dark-theme .modern-admin-header {
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--admin-border);
+}
+
+.dark-theme .modern-admin-sidebar {
+  background: var(--admin-bg-primary);
+  border-left-color: var(--admin-border);
+}
+
+.dark-theme .modern-card {
+  background: var(--admin-bg-primary);
+  border-color: var(--admin-border);
+}
+
+.dark-theme .modern-card:hover {
+  box-shadow: var(--admin-shadow-md);
+}
+
+.dark-theme .modern-btn-secondary {
+  background: var(--admin-bg-primary);
+  color: var(--admin-text-secondary);
+  border-color: var(--admin-border);
+}
+
+.dark-theme .modern-btn-secondary:hover {
+  background: var(--admin-bg-secondary);
+  border-color: var(--admin-primary);
+  color: var(--admin-primary);
+}
+
+/* تحسينات للنماذج في الوضع المظلم */
+.dark-theme .form-input,
+.dark-theme .modern-input {
+  background: var(--admin-bg-secondary);
+  border-color: var(--admin-border);
+  color: var(--admin-text-primary);
+}
+
+.dark-theme .form-input:focus,
+.dark-theme .modern-input:focus {
+  background: var(--admin-bg-primary);
+  border-color: var(--admin-primary);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.1);
+}
+
+/* تحسينات للجداول في الوضع المظلم */
+.dark-theme table {
+  background: var(--admin-bg-primary);
+}
+
+.dark-theme th {
+  background: var(--admin-bg-secondary);
+  color: var(--admin-text-primary);
+  border-color: var(--admin-border);
+}
+
+.dark-theme td {
+  border-color: var(--admin-border);
+  color: var(--admin-text-secondary);
+}
+
+.dark-theme tr:hover {
+  background: var(--admin-bg-secondary);
+}
+
+/* تحسينات للقوائم المنسدلة في الوضع المظلم */
+.dark-theme .dropdown-menu,
+.dark-theme .notifications-dropdown,
+.dark-theme .profile-dropdown {
+  background: var(--admin-bg-primary);
+  border-color: var(--admin-border);
+  box-shadow: var(--admin-shadow-xl);
+}
+
+.dark-theme .dropdown-header {
+  background: var(--admin-bg-secondary);
+  border-color: var(--admin-border-light);
+}
+
+.dark-theme .menu-item:hover,
+.dark-theme .notification-item:hover {
+  background: var(--admin-bg-secondary);
+}
+
+/* تحسينات للإشعارات في الوضع المظلم */
+.dark-theme .alert-error {
+  background: rgba(248, 113, 113, 0.1);
+  border-color: rgba(248, 113, 113, 0.2);
+}
+
+.dark-theme .alert-success {
+  background: rgba(52, 211, 153, 0.1);
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+.dark-theme .alert-warning {
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.2);
+}
+
+.dark-theme .alert-info {
+  background: rgba(96, 165, 250, 0.1);
+  border-color: rgba(96, 165, 250, 0.2);
+}
+
+/* تحسينات للبطاقات الإحصائية في الوضع المظلم */
+.dark-theme .modern-stats-card {
+  background: var(--admin-bg-primary);
+  border-color: var(--admin-border);
+}
+
+.dark-theme .modern-stats-card:hover {
+  border-color: var(--admin-primary-light);
+  box-shadow: var(--admin-shadow-xl);
+}
+
+/* تحسينات للسكرول بار في الوضع المظلم */
+.dark-theme .modern-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--admin-border);
+}
+
+.dark-theme .modern-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--admin-text-tertiary);
+}
+
+/* تحسينات للنوافذ المنبثقة في الوضع المظلم */
+.dark-theme .modal-content,
+.dark-theme .popup-content {
+  background: var(--admin-bg-primary);
+  border-color: var(--admin-border);
+}
+
+.dark-theme .modal-header,
+.dark-theme .popup-header {
+  background: var(--admin-bg-secondary);
+  border-color: var(--admin-border-light);
+}
+
+/* تحسينات للأزرار في الوضع المظلم */
+.dark-theme .btn-outline {
+  border-color: var(--admin-border);
+  color: var(--admin-text-secondary);
+}
+
+.dark-theme .btn-outline:hover {
+  background: var(--admin-bg-secondary);
+  border-color: var(--admin-primary);
+  color: var(--admin-primary);
+}
+
+/* تحسينات خاصة لصفحة تسجيل الدخول في الوضع المظلم */
+.dark-theme .modern-admin-login-page {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+}
+
+.dark-theme .login-card {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark-theme .gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(129, 140, 248, 0.6) 0%,
+    rgba(139, 92, 246, 0.5) 25%,
+    rgba(96, 165, 250, 0.4) 50%,
+    rgba(52, 211, 153, 0.3) 75%,
+    rgba(251, 191, 36, 0.2) 100%
+  );
+}
+
+/* تأثيرات الانتقال السلس */
+.theme-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* تحسينات إمكانية الوصول */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* تحسينات للطباعة */
+@media print {
+  .theme-toggle-btn,
+  .simple-theme-toggle {
+    display: none;
+  }
+  
+  :root {
+    --admin-bg-primary: white;
+    --admin-text-primary: black;
+    --admin-border: #ccc;
+  }
+}

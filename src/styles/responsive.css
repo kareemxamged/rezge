@@ -1,0 +1,505 @@
+/* Responsive Design Enhancements for Rezge */
+
+/* Custom scrollbar for mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth animations for mobile */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .animate-float:nth-child(3) {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Mobile-first breakpoints */
+@media (max-width: 640px) {
+  /* Reduce motion on small screens */
+  .animate-float {
+    animation: none;
+  }
+
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improved form inputs */
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* Better spacing for mobile */
+  .mobile-spacing {
+    padding: 1rem;
+  }
+
+  /* Stack cards vertically */
+  .mobile-stack > * {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Profile dropdown adjustments for mobile */
+  .profile-dropdown {
+    width: calc(100vw - 1rem) !important;
+    max-width: 18rem;
+    right: 0.5rem !important;
+    left: auto !important;
+    margin-top: 0.5rem;
+  }
+
+  /* Better text sizing for mobile dropdown */
+  .profile-dropdown .text-sm {
+    font-size: 0.875rem;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Optimize grid layouts for tablets */
+  .tablet-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tablet-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Profile dropdown adjustments for tablets */
+  .profile-dropdown {
+    min-width: 14rem;
+    max-width: 16rem;
+  }
+}
+
+/* Desktop enhancements */
+@media (min-width: 1025px) {
+  /* Hover effects only on desktop */
+  .desktop-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* RTL specific responsive adjustments */
+[dir="rtl"] {
+  /* Mobile navigation adjustments */
+  .mobile-nav {
+    right: 0;
+    left: auto;
+  }
+  
+  /* Form label alignment */
+  .form-label {
+    text-align: right;
+  }
+  
+  /* Icon positioning for RTL */
+  .icon-right {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  
+  .icon-left {
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gradient-to-br {
+    background: #1e293b !important;
+  }
+  
+  .text-slate-600 {
+    color: #000 !important;
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .auto-dark {
+    background-color: #1e293b;
+    color: #f1f5f9;
+  }
+  
+  .auto-dark-card {
+    background-color: #334155;
+    border-color: #475569;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-after: always;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Focus management for accessibility */
+.focus-visible:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Skip link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Loading states */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Safe area insets for mobile devices with notches */
+@supports (padding: max(0px)) {
+  .safe-area-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+  
+  .safe-area-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  
+  .safe-area-left {
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+  
+  .safe-area-right {
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* Improved touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects on touch devices */
+  .hover\:shadow-xl:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Larger touch targets */
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* Better button spacing */
+  .touch-button {
+    padding: 12px 24px;
+    margin: 8px 4px;
+  }
+}
+
+/* Container queries support (future-proofing) */
+@container (max-width: 400px) {
+  .container-responsive {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High refresh rate displays */
+@media (min-resolution: 120dpi) {
+  .high-dpi {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .landscape-adjust {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .landscape-hide {
+    display: none;
+  }
+}
+
+/* Very small screens (older phones) */
+@media (max-width: 320px) {
+  .text-xs-mobile {
+    font-size: 0.75rem;
+  }
+
+  .p-xs-mobile {
+    padding: 0.5rem;
+  }
+
+  .gap-xs-mobile {
+    gap: 0.25rem;
+  }
+
+  /* Profile dropdown adjustments for very small screens */
+  .profile-dropdown {
+    width: calc(100vw - 1rem) !important;
+    right: 0.5rem !important;
+    left: auto !important;
+    transform: translateX(0) !important;
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1920px) {
+  .max-w-8xl {
+    max-width: 88rem;
+  }
+
+  .text-xl-desktop {
+    font-size: 1.5rem;
+  }
+}
+
+/* Profile dropdown positioning - simplified and responsive */
+.profile-dropdown {
+  /* تبسيط التنسيقات لتجنب التعقيدات */
+  max-width: calc(100vw - 1rem);
+  min-width: 14rem;
+}
+
+/* Subscription page improvements */
+@media (max-width: 768px) {
+  /* Better spacing for subscription plans on mobile */
+  .subscription-plans-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Transaction table improvements for mobile */
+  .transaction-table {
+    font-size: 0.875rem;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  /* Better button spacing on mobile */
+  .mobile-button-stack {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-button-stack button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Admin coupon management improvements */
+.coupon-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  .coupon-actions {
+    gap: 0.5rem;
+  }
+
+  .coupon-actions button {
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+}
+
+/* Table responsive improvements */
+.responsive-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.responsive-table table {
+  min-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .responsive-table {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+
+  .responsive-table table {
+    min-width: 600px;
+  }
+}
+
+/* تحسينات إضافية للقائمة المنسدلة */
+@media (max-width: 640px) {
+  .profile-dropdown {
+    /* على الشاشات الصغيرة، اجعل القائمة أكثر مرونة */
+    min-width: 12rem;
+    max-width: calc(100vw - 0.5rem);
+  }
+}
+
+/* تحسين عرض النصوص في القائمة المنسدلة */
+.profile-dropdown .whitespace-nowrap {
+  /* منع كسر النص مع ضمان عدم الخروج من الحدود */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* منع الـ horizontal scroll العام */
+body {
+  overflow-x: hidden;
+}
+
+/* ضمان أن جميع العناصر المطلقة تبقى داخل الشاشة */
+.absolute {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Mobile Navigation Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  overflow: hidden;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Enhanced mobile menu with solid background */
+.mobile-menu-backdrop {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+/* Smooth menu item animations */
+.mobile-menu-item {
+  transition: all 0.2s ease-out;
+  transform: translateX(0);
+}
+
+.mobile-menu-item:hover {
+  transform: translateX(-4px);
+}
+
+/* Staggered animation for menu items */
+.mobile-menu-item:nth-child(1) { animation-delay: 0.1s; }
+.mobile-menu-item:nth-child(2) { animation-delay: 0.15s; }
+.mobile-menu-item:nth-child(3) { animation-delay: 0.2s; }
+.mobile-menu-item:nth-child(4) { animation-delay: 0.25s; }
+.mobile-menu-item:nth-child(5) { animation-delay: 0.3s; }
+.mobile-menu-item:nth-child(6) { animation-delay: 0.35s; }
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-out forwards;
+}
